@@ -1,0 +1,73 @@
+.footerContainer {
+    background-color: #141414;
+    .footerContent {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-between;
+
+        .contactInfo {
+            h4 {
+                font-family: 'Montserrat';
+                font-weight: 600;
+            }
+
+            p {
+                font-family: 'Inter';
+                font-size: .85rem;
+                font-weight: 400;
+                color: #d0d0d0;
+                letter-spacing: .5px;
+            }
+
+            .socialsContainer {
+                display: flex;
+
+                .socialItem {
+                    margin-right: .5rem;
+                    background-color: #d0d0d0;
+                    border-radius: 50%;
+                    height: 20px;
+                    width: 20px;
+                }
+            }
+        }
+
+        .quickLinks {
+
+        }
+
+        .affiliateLinks {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .bottomRow {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: 1.5rem auto;
+        p {
+            font-family: 'Inter';
+            font-size: .75rem;
+            color: #d0d0d0;
+            span {
+                color: #FF52CB;
+            }
+        }
+
+        .backToTop {
+            
+            height: 25px;
+            width: 25px;
+            font-size: 1.5rem;
+            background-color: #FF52CB;
+            color: #000;
+            text-align: center;
+            vertical-align: center;
+
+
+        }
+    }
+}

@@ -1,0 +1,57 @@
+.footerContainer {
+  background-color: #141414;
+}
+.footerContainer .footerContent {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.footerContainer .footerContent .contactInfo h4 {
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+.footerContainer .footerContent .contactInfo p {
+  font-family: "Inter";
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #d0d0d0;
+  letter-spacing: 0.5px;
+}
+.footerContainer .footerContent .contactInfo .socialsContainer {
+  display: flex;
+}
+.footerContainer .footerContent .contactInfo .socialsContainer .socialItem {
+  margin-right: 0.5rem;
+  background-color: #d0d0d0;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+.footerContainer .footerContent .affiliateLinks {
+  display: flex;
+  flex-direction: column;
+}
+.footerContainer .bottomRow {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 1.5rem auto;
+}
+.footerContainer .bottomRow p {
+  font-family: "Inter";
+  font-size: 0.75rem;
+  color: #d0d0d0;
+}
+.footerContainer .bottomRow p span {
+  color: #FF52CB;
+}
+.footerContainer .bottomRow .backToTop {
+  height: 25px;
+  width: 25px;
+  font-size: 1.5rem;
+  background-color: #FF52CB;
+  color: #000;
+  text-align: center;
+  vertical-align: center;
+}/*# sourceMappingURL=footer.module.css.map */

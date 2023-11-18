@@ -1,0 +1,111 @@
+.navContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 45px;
+
+    .logo {
+        margin-left: 2rem;
+    }
+
+    .burger, .fullMenu {
+        margin-right: 2rem;
+    }
+
+    .fullMenu {
+        
+        a {
+            margin: 1rem;
+        }
+    }
+
+    .burgerContainer {
+
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: all .2s ease;
+        .burger {
+
+            width: 20px;
+            height: 2px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(255,101,47,.2);
+            transition: all 0.5s ease;
+            &::before, &::after {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 2px;
+                background-color: #fff;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(255,101,47,.2);
+                transition: all 0.5s ease;
+            }
+                
+            &::before {
+                transform: translateY(-10px);
+            }
+    
+            &::after {
+                transform: translateY(10px);
+            }
+    
+
+        }
+    }
+
+    .sidemenu {
+        visibility: hidden;
+        position: absolute;
+        background-color: #1e1e1e;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            margin: 2rem;
+        }
+
+        button {
+            position: absolute;
+            top: 0;
+            right:0;
+            margin: 1rem;
+        }
+    }
+}
+
+@media screen and (min-width: 500px) {
+
+    .burgerContainer {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .fullMenu {
+        display: none;
+    }
+
+    .burgerContainer {
+        display: flex;
+    }
+}
+

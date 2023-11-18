@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700;800&family=Inter:wght@400;600;800&family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap');
+
+.heroContainer {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25)), url('/vinyl-wrap-car.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .pinkText, h1, .subtext, .heroBtn {
+        margin-left: 2rem;
+    }
+
+    .pinkText {
+        color: #FF52CB;
+        font-size: .75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: .55px;
+    }
+
+    h1 {
+        font-family: 'Montserrat';
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-bottom: 0;
+        width: 90%;
+        text-shadow: 1px 1px 3px rgb(0, 0, 0);
+    }
+
+    .subtext {
+        color: #D0D0D0;
+        font-family: 'Inter';
+        font-size: .65rem;
+        width: 85%;
+        font-weight: 300;
+        letter-spacing: .5px;
+        margin-bottom: .65rem;
+
+    }
+
+    .heroBtn {
+        text-align: center;
+        background-color: #B74597;
+        width: 175px;
+        height: 35px;
+        color: #1a1919;
+        font-weight: 600;
+        box-shadow: 1px 1px 3px #000;
+    }
+}
