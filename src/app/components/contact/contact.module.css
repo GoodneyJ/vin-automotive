@@ -1,0 +1,35 @@
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 3rem 0;
+  background: linear-gradient(0deg, rgb(56, 1, 101), rgb(37, 18, 32));
+}
+.contactContainer h2 {
+  font-size: 2rem;
+}
+.contactContainer form {
+  display: flex;
+  flex-direction: column;
+}
+.contactContainer form input, .contactContainer form select, .contactContainer form textarea {
+  background-color: #460679;
+  width: 65%;
+  margin: 0.25rem auto;
+  transition: all 0.2s ease;
+  border-radius: 2px;
+}
+.contactContainer form input, .contactContainer form select {
+  height: 35px;
+}
+.contactContainer form textarea {
+  height: 150px;
+}
+.contactContainer form input, .contactContainer form select, .contactContainer form textarea {
+  outline: none;
+}
+.contactContainer form input:focus, .contactContainer form select:focus, .contactContainer form textarea:focus {
+  background-color: #6A08B9;
+  border: 2px solid #9715ff;
+  box-shadow: 0px 0px 14px #9715ff;
+}/*# sourceMappingURL=contact.module.css.map */

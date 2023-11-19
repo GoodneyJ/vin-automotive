@@ -12,9 +12,19 @@
 }
 .navContainer .logo {
   margin-left: 2rem;
+  font-size: 1.5rem;
+  background: linear-gradient(90deg, rgb(255, 84, 107), rgb(255, 82, 203), rgb(138, 53, 188));
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1.5px;
 }
 .navContainer .burger, .navContainer .fullMenu {
   margin-right: 2rem;
+}
+.navContainer .fullMenu {
+  color: #FF52CB;
 }
 .navContainer .fullMenu a {
   margin: 1rem;

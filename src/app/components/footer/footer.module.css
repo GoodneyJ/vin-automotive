@@ -1,5 +1,6 @@
 .footerContainer {
   background-color: #141414;
+  padding: 1rem 0;
 }
 .footerContainer .footerContent {
   display: flex;
@@ -36,7 +37,8 @@
   display: flex;
   justify-content: space-between;
   width: 90%;
-  margin: 1.5rem auto;
+  margin: 0 auto;
+  padding: 1rem 0;
 }
 .footerContainer .bottomRow p {
   font-family: "Inter";
