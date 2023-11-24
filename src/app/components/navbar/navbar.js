@@ -1,34 +1,66 @@
-import React from 'react'
+'use client'
+import {React, useEffect, useState, useRef} from 'react'
 
 import styles from './navbar.module.css'
 
 export default function navbar() {
+
+  const [menuInteract, setMenuInteract] = useState(true);
+  const [sidebarToggle, setSidebarToggle] = useState(true);
+
+  const menuRef = useRef();
+
+  const sidebarRef = useRef();
+
+  function handleClick() {
+    if(menuInteract && sidebarToggle) {
+      menuRef.current.classList.add(`${styles.open}`)
+      setMenuInteract(!menuInteract);
+      setSidebarToggle(!sidebarToggle);
+      sidebarRef.current.classList.add(`${styles.display}`);
+
+    } else {
+      menuRef.current.classList.remove(`${styles.open}`);
+      setMenuInteract(!menuInteract);
+      setSidebarToggle(!sidebarToggle);
+      sidebarRef.current.classList.remove(`${styles.display}`);
+
+    }
+
+  }
+
   return (
-    <nav className={styles.navContainer}>
-      <div className={styles.logo}>
-        <a>VIN</a>
-      </div>
-      
-      <div className={styles.fullMenu}>
-        <a>Home</a>
-        <a>About</a>
-        <a>Services</a>
-        <a>Content</a>
-      </div>
+      <div className={styles.navigationComponent}>
+        <nav className={styles.navContainer}>
+          <div className={styles.logo}>
+            <a>VIN</a>
+          </div>
+          
+          <div className={styles.fullMenu}>
+            <a>Home</a>
+            <a>About</a>
+            <a>Services</a>
+            <a>Content</a>
+          </div>
 
-      <div className={styles.burgerContainer}>
-        <div className={styles.burger}></div>
-      </div>
-      
-      <div className={styles.sidemenu}>
-        <a>Home</a>
-        <a>About</a>
-        <a>Services</a>
-        <a>Content</a>
+          <div id="menu-btn" className={styles.burgerContainer} ref={menuRef} onClick={handleClick}>
+            <div id="menu-burger" className={styles.burger}>
 
-        <button>X</button>
-      </div>
-      
-    </nav>
+            </div>
+          </div>
+          
+
+          
+        </nav>
+
+        <div className={styles.sidemenu} ref={sidebarRef}>
+            <a>Home</a>
+            <a>About</a>
+            <a>Services</a>
+            <a>Content</a>
+
+            <button onClick={handleClick}></button>
+        </div>
+    </div>
   )
 }

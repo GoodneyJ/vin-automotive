@@ -1,16 +1,19 @@
-.navContainer {
+.navigationComponent {
+  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
   margin: 0;
   padding: 0;
+}
+.navigationComponent .navContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
   height: 45px;
 }
-.navContainer .logo {
+.navigationComponent .navContainer .logo {
   margin-left: 2rem;
   font-size: 1.5rem;
   background: linear-gradient(90deg, rgb(255, 84, 107), rgb(255, 82, 203), rgb(138, 53, 188));
@@ -20,16 +23,19 @@
   font-weight: bold;
   letter-spacing: 1.5px;
 }
-.navContainer .burger, .navContainer .fullMenu {
+.navigationComponent .navContainer .burger, .navigationComponent .navContainer .fullMenu {
   margin-right: 2rem;
 }
-.navContainer .fullMenu {
+.navigationComponent .navContainer .fullMenu {
   color: #FF52CB;
 }
-.navContainer .fullMenu a {
+.navigationComponent .navContainer .fullMenu a {
   margin: 1rem;
 }
-.navContainer .burgerContainer {
+.navigationComponent .navContainer .burgerContainer {
+  margin: 1rem 1rem;
+  position: relative;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 40px;
@@ -37,15 +43,16 @@
   cursor: pointer;
   transition: all 0.2s ease;
 }
-.navContainer .burgerContainer .burger {
+.navigationComponent .navContainer .burgerContainer .burger {
   width: 20px;
   height: 2px;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
   transition: all 0.5s ease;
+  margin: 0;
 }
-.navContainer .burgerContainer .burger::before, .navContainer .burgerContainer .burger::after {
+.navigationComponent .navContainer .burgerContainer .burger::before, .navigationComponent .navContainer .burgerContainer .burger::after {
   content: "";
   position: absolute;
   width: 20px;
@@ -55,33 +62,57 @@
   box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
   transition: all 0.5s ease;
 }
-.navContainer .burgerContainer .burger::before {
+.navigationComponent .navContainer .burgerContainer .burger::before {
   transform: translateY(-10px);
 }
-.navContainer .burgerContainer .burger::after {
+.navigationComponent .navContainer .burgerContainer .burger::after {
   transform: translateY(10px);
 }
-.navContainer .sidemenu {
-  visibility: hidden;
-  position: absolute;
-  background-color: #1e1e1e;
+.navigationComponent .sidemenu {
+  z-index: 100000;
+  display: none;
+  position: fixed;
+  background-color: #333333;
   right: 0;
   top: 0;
-  height: 100%;
+  height: 100vh;
   width: 250px;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  will-change: transform, display;
+  color: #ff53cb;
+  transition: all 0.2s ease;
 }
-.navContainer .sidemenu a {
+.navigationComponent .sidemenu a {
   margin: 2rem;
 }
-.navContainer .sidemenu button {
+.navigationComponent .sidemenu button {
   position: absolute;
   top: 0;
   right: 0;
   margin: 1rem;
+}
+.navigationComponent .sidemenu button::before, .navigationComponent .sidemenu button::after {
+  content: "";
+  position: absolute;
+  right: 5%;
+  width: 20px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease;
+}
+.navigationComponent .sidemenu button::before {
+  transform: rotate(45deg);
+}
+.navigationComponent .sidemenu button::after {
+  transform: rotate(-45deg);
+}
+.navigationComponent .sidemenu.display {
+  display: flex;
+  transform: translateX(0px);
 }
 
 @media screen and (min-width: 500px) {

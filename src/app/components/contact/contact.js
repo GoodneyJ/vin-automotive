@@ -10,8 +10,8 @@ export default function contact() {
         <p>Any quetsions or concerns?</p>
         <p>You can message us here as well or call us!</p>
         <form>
-            <input type="text" value="name"/>
-            <input type="text" value="email"/>
+            <input type="text" placeholder="name"/>
+            <input type="text" placeholder="email" />
             <select id="cars" name="cars" placeholder="what kind of work do you need?">
                 <option value="volvo">Volvo</option>
                 <option value="saab">Saab</option>
