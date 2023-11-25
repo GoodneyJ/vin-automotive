@@ -5,6 +5,7 @@ import styles from './ServiceSection.module.css'
 
 export default function ServiceSection() {
   return (
+    <div>
     <div className={styles.ServiceSectionContainer}>
         <h2>Need work done?</h2>
 
@@ -25,7 +26,9 @@ export default function ServiceSection() {
             </div>
         </div>
 
-        <div className={styles.ServiceCTA}>
+
+    </div>
+    <div className={styles.ServiceCTA}>
             <p>Don't See it here? Check out our full list of services!</p>
             <button>Services</button>
         </div>

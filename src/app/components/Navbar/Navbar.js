@@ -37,7 +37,7 @@ export default function Navbar() {
           </div>
           
           <div className={styles.fullMenu}>
-            <a>Home</a>
+            <a>Home.</a>
             <a>About</a>
             <a>Services</a>
             <a>Content</a>

@@ -22,19 +22,21 @@
   border-radius: 2px;
   margin: 1rem;
 }
-.ServiceSectionContainer .ServiceCTA {
+
+.ServiceCTA {
   background-color: #1e1e1e;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 15vh;
 }
-.ServiceSectionContainer .ServiceCTA p {
+.ServiceCTA p {
   font-size: 0.75rem;
   text-align: center;
   width: 50%;
 }
-.ServiceSectionContainer .ServiceCTA button {
+.ServiceCTA button {
   display: flex;
   justify-content: center;
   align-items: center;
