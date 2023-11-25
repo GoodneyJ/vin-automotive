@@ -53,7 +53,7 @@ export default function Navbar() {
         </nav>
 
         <div className={styles.sidemenu} ref={sidebarRef}>
-            <a>Home</a>
+            <a>Home.</a>
             <a>About</a>
             <a>Services</a>
             <a>Content</a>
