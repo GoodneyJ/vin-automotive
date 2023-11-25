@@ -1,10 +1,10 @@
 import React from 'react'
 
-import Navbar from '../navbar/navbar'
+import Navbar from '../navbar/Navbar'
 
 import styles from './hero.module.css'
 
-export default function hero() {
+export default function Hero() {
   return (
     <div className={styles.heroContainer}>
         <Navbar />

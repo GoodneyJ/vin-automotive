@@ -6,12 +6,12 @@
     width: 100%;
     margin: 0;
     padding: 0;
-
+    background-color: #1e1e1e;
+    box-shadow: 0px 0px 5px 3px #000000;
     .navContainer {
         display: flex;
         align-items: center;
         justify-content: space-between;
-
         height: 45px;
     
         .logo {
@@ -30,15 +30,21 @@
     
         .fullMenu {
             color: #FF52CB;
+
             a {
                 margin: 1rem;
+                transition: all 0.2s ease;
+                &:hover {
+                    color:#fd9de1;
+                    filter: drop-shadow(0px 0px 15px #ff06b4);
+                    cursor: pointer;
+                }
             }
         }
     
         .burgerContainer {
             margin: 1rem 1rem;
             position: relative;
-            display: flex;
             justify-content: center;
             align-items: center;
             width: 40px;
@@ -99,7 +105,7 @@
             margin: 2rem;
 
             &:hover {
-                
+                color: blue;
 
             }
         }
@@ -144,7 +150,7 @@
 
 
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 501px) {
 
     .burgerContainer {
         display: none;

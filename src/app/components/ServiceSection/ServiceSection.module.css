@@ -1,0 +1,56 @@
+.ServiceSectionContainer {
+  background: linear-gradient(180deg, rgb(12, 12, 12), rgb(37, 18, 31)), url("/vinyl-wrap-car.jpg");
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+.ServiceSectionContainer h2 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 1.75rem;
+}
+.ServiceSectionContainer button {
+  background-color: #B88CDC;
+  color: #dbdbdb;
+  font-family: "Montserrat";
+  font-weight: 600;
+  letter-spacing: -1.5px;
+  padding: 0.5rem;
+  border-radius: 2px;
+  margin: 1rem;
+}
+.ServiceSectionContainer .ServiceCTA {
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.ServiceSectionContainer .ServiceCTA p {
+  font-size: 0.75rem;
+  text-align: center;
+  width: 50%;
+}
+.ServiceSectionContainer .ServiceCTA button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  background-color: #C6409E;
+  width: 125px;
+  border-radius: 0;
+  color: #1e1e1e;
+  letter-spacing: 0px;
+}
+
+@media screen and (min-width: 500px) {
+  .ServiceGallery {
+    padding: 2rem 0;
+  }
+  .GalleryRowOne, .GalleryRowTwo {
+    display: flex;
+  }
+}/*# sourceMappingURL=ServiceSection.module.css.map */

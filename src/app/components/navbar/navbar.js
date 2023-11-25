@@ -3,7 +3,7 @@ import {React, useEffect, useState, useRef} from 'react'
 
 import styles from './navbar.module.css'
 
-export default function navbar() {
+export default function Navbar() {
 
   const [menuInteract, setMenuInteract] = useState(true);
   const [sidebarToggle, setSidebarToggle] = useState(true);
@@ -45,7 +45,6 @@ export default function navbar() {
 
           <div id="menu-btn" className={styles.burgerContainer} ref={menuRef} onClick={handleClick}>
             <div id="menu-burger" className={styles.burger}>
-
             </div>
           </div>
           

@@ -1,12 +1,15 @@
-import Hero from './components/hero/hero'
-import About from './components/about/about'
-import Contact from './components/contact/contact'
-import Footer from './components/footer/footer'
-export default function Home() {
+import Hero from './components/hero/Hero'
+import About from './components/About/About'
+import ServiceSection from './components/ServiceSection/ServiceSection'
+import Contact from './components/contact/Contact'
+import Footer from './components/footer/Footer'
+export default function Page() {
   return (
     <main >
       <Hero />
       <About />
+      <ServiceSection />
+      
       <Contact />
       <Footer />
     </main>

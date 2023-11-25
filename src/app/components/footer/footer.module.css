@@ -29,6 +29,12 @@
   height: 20px;
   width: 20px;
 }
+.footerContainer .footerContent .contactInfo .socialsContainer .socialItem:hover {
+  cursor: pointer;
+}
+.footerContainer .footerContent .quickLinks {
+  margin: 0.5rem 0;
+}
 .footerContainer .footerContent .affiliateLinks {
   display: flex;
   flex-direction: column;
@@ -56,4 +62,10 @@
   color: #000;
   text-align: center;
   vertical-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .footerContent {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=footer.module.css.map */

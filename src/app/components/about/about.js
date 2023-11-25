@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from './about.module.css'
 
-export default function about() {
+export default function About() {
   return (
     <div className={styles.aboutContainer}>
       <div className={styles.image}>Dummy image</div>

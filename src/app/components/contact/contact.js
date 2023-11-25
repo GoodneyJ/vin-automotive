@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from './contact.module.css'
 
-export default function contact() {
+export default function Contact() {
   return (
     <div className={styles.contactContainer}>
 
