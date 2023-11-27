@@ -15,14 +15,14 @@ export default function ServiceSection() {
 
         <div className={styles.ServiceGallery}>
             <div className={styles.GalleryRowOne}>
-                <ServiceCard />
-                <ServiceCard />
-                <ServiceCard />
+                <ServiceCard id={'CardOne'}/>
+                <ServiceCard id={'CardTwo'}/>
+                <ServiceCard id={'CardThree'}/>
             </div>
             <div className={styles.GalleryRowTwo}>
-                <ServiceCard />
-                <ServiceCard />
-                <ServiceCard />
+                <ServiceCard id={'CardFour'}/>
+                <ServiceCard id={'CardFive'}/>
+                <ServiceCard id={'CardSix'}/>
             </div>
         </div>
 
