@@ -1,4 +1,4 @@
-.ServiceSectionContainer {
+.ServiceWrapper .ServiceSectionContainer {
   background: linear-gradient(180deg, rgb(12, 12, 12), rgb(37, 18, 31)), url("/vinyl-wrap-car.jpg");
   padding: 2rem 0;
   display: flex;
@@ -7,12 +7,18 @@
   align-items: center;
   transition: all 0.2s ease;
 }
-.ServiceSectionContainer h2 {
+.ServiceWrapper .ServiceSectionContainer h2 {
   font-family: "Montserrat";
   font-weight: 600;
   font-size: 1.75rem;
 }
-.ServiceSectionContainer button {
+.ServiceWrapper .ServiceSectionContainer p {
+  font-family: "Montserrat";
+  width: 90%;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.ServiceWrapper .ServiceSectionContainer button {
   background-color: #B88CDC;
   color: #dbdbdb;
   font-family: "Montserrat";
@@ -21,22 +27,32 @@
   padding: 0.5rem;
   border-radius: 2px;
   margin: 1rem;
+  transition: all 0.2s ease;
 }
-
-.ServiceCTA {
+.ServiceWrapper .ServiceSectionContainer button:hover {
+  background-color: #7b5c94;
+}
+.ServiceWrapper .ServiceCTAContainer {
   background-color: #1e1e1e;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   height: 15vh;
 }
-.ServiceCTA p {
+.ServiceWrapper .ServiceCTAContainer .ServiceCTA {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+}
+.ServiceWrapper .ServiceCTAContainer .ServiceCTA p {
+  width: 80%;
   font-size: 0.75rem;
   text-align: center;
   width: 50%;
 }
-.ServiceCTA button {
+.ServiceWrapper .ServiceCTAContainer .ServiceCTA button {
   display: flex;
   justify-content: center;
   align-items: center;

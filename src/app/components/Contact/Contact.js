@@ -7,7 +7,7 @@ export default function Contact() {
     <div className={styles.contactContainer}>
 
         <h2>Book an appointment!</h2>
-        <p>Any quetsions or concerns?</p>
+        <p>Any questions or concerns?</p>
         <p>You can message us here as well or call us!</p>
         <form>
             <input type="text" placeholder="name"/>

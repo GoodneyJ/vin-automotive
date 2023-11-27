@@ -7,10 +7,15 @@
 }
 .contactContainer h2 {
   font-size: 2rem;
+  font-weight: 600;
+}
+.contactContainer p {
+  margin: 0.5rem 0;
 }
 .contactContainer form {
   display: flex;
   flex-direction: column;
+  margin: 1rem 0;
 }
 .contactContainer form input, .contactContainer form select, .contactContainer form textarea {
   background-color: #460679;
@@ -18,6 +23,7 @@
   margin: 0.25rem auto;
   transition: all 0.2s ease;
   border-radius: 2px;
+  box-shadow: 0px 1px 5px #1e1e1e;
 }
 .contactContainer form input, .contactContainer form select {
   height: 35px;

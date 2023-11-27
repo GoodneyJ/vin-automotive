@@ -10,7 +10,7 @@ export default function ServiceCard(props) {
 
   return (
     <div id={`${props.id}`} className={`bg ${styles.ServiceCardContainer}`}>
-        <h4 className={styles.CardContent}>Card Title</h4>
+        <h4 className={styles.CardContent}>{props.title}</h4>
         <p className={styles.CardContent}>basic description</p>
         <button className={styles.CardContent}>Read more</button>
 

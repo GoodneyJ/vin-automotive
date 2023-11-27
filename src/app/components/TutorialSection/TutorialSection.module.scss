@@ -1,52 +1,56 @@
 .TutorialSectionContainer {
 
-    .CarouselWrapper {
+    .TutorialSectionContent {
         background-color: #FF52CB;
-        height: 50vh;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        .SwiperContainer {
+
+        .RecentVideosContainer {
             background-color: #222121;
+            height: 80%;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
 
-            width: 90%;
-            height: 50%;
-            padding: 2rem;
-
-            .SwiperSlide {
+            .VidCard {
                 display: flex;
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                flex-direction: column;
-                text-align: center;
-                .SwiperImg {
-                    height: 25px;
-                    width: 25px;
+                font-family: "Montserrat";
+                .ThumbNail {
                     background-color: #dedede;
+                    height: 100px;
+                    width: 100px;
+                    border-radius: 2px;
                 }
 
-                .SwiperHeading, .SwiperText {
-                    width: 100%;
-                    font-size: .65rem;
+                h4 {
+                    font-weight: 700;
 
                 }
-
-                .SwiperText {
+                
+                p {
+                    width:  50%;
+                    margin: 0 auto;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
                     overflow: hidden;
                     text-overflow: ellipsis;
-                    white-space: nowrap;
-                    // --webkit-line-clamp: 2;
-                    // display: -webkit-box;
-                    // -webkit-box-orient: vertical;
+                    display: -webkit-box;
 
+                    font-size: 0.85rem;
                 }
-
             }
         }
 
         button {
             background-color: #dedede;
+            color: #c73c9d;
             transform: translateY(-10px);
             z-index: 10000;
             height: 35px;

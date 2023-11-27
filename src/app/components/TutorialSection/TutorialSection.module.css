@@ -1,40 +1,48 @@
-.TutorialSectionContainer .CarouselWrapper {
+.TutorialSectionContainer .TutorialSectionContent {
   background-color: #FF52CB;
-  height: 50vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.TutorialSectionContainer .CarouselWrapper .SwiperContainer {
+.TutorialSectionContainer .TutorialSectionContent .RecentVideosContainer {
   background-color: #222121;
-  width: 90%;
-  height: 50%;
-  padding: 2rem;
-}
-.TutorialSectionContainer .CarouselWrapper .SwiperContainer .SwiperSlide {
+  height: 80%;
+  width: 80%;
   display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.TutorialSectionContainer .TutorialSectionContent .RecentVideosContainer .VidCard {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  text-align: center;
+  font-family: "Montserrat";
 }
-.TutorialSectionContainer .CarouselWrapper .SwiperContainer .SwiperSlide .SwiperImg {
-  height: 25px;
-  width: 25px;
+.TutorialSectionContainer .TutorialSectionContent .RecentVideosContainer .VidCard .ThumbNail {
   background-color: #dedede;
+  height: 100px;
+  width: 100px;
+  border-radius: 2px;
 }
-.TutorialSectionContainer .CarouselWrapper .SwiperContainer .SwiperSlide .SwiperHeading, .TutorialSectionContainer .CarouselWrapper .SwiperContainer .SwiperSlide .SwiperText {
-  width: 100%;
-  font-size: 0.65rem;
+.TutorialSectionContainer .TutorialSectionContent .RecentVideosContainer .VidCard h4 {
+  font-weight: 700;
 }
-.TutorialSectionContainer .CarouselWrapper .SwiperContainer .SwiperSlide .SwiperText {
+.TutorialSectionContainer .TutorialSectionContent .RecentVideosContainer .VidCard p {
+  width: 50%;
+  margin: 0 auto;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  display: -webkit-box;
+  font-size: 0.85rem;
 }
-.TutorialSectionContainer .CarouselWrapper button {
+.TutorialSectionContainer .TutorialSectionContent button {
   background-color: #dedede;
+  color: #c73c9d;
   transform: translateY(-10px);
   z-index: 10000;
   height: 35px;
