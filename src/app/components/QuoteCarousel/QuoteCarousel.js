@@ -21,6 +21,7 @@ export default function QuoteCarousel() {
 
   return (
     <Swiper
+      cssMode={true}
       modules={[Navigation, Pagination]}
       spaceBetween={50}
       slidesPerView={1}
