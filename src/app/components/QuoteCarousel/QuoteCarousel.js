@@ -26,28 +26,36 @@ export default function QuoteCarousel() {
       onSwiper={(swiper) => console.log(swiper)}
       className={styles.SwiperContainer}
     >
-      <SwiperSlide className={styles.SwiperSlide}>
-        <div className={styles.SlidePfp}></div>
-        <div className={styles.SlideContent}>
-
+      <SwiperSlide>
+        <div className={styles.SwiperSlide}>
+          <div className={styles.SlidePfp}></div>
+          <div className={styles.SlideContent}>
+          <p>slide 1</p>
+          </div>
         </div>
       </SwiperSlide>
-      <SwiperSlide className={styles.SwiperSlide}>
-        <div className={styles.SlidePfp}></div>
-        <div className={styles.SlideContent}>
-        <p>slide 1</p>
+      <SwiperSlide>
+      <div className={styles.SwiperSlide}>
+          <div className={styles.SlidePfp}></div>
+          <div className={styles.SlideContent}>
+          <p>slide 1</p>
+          </div>
         </div>
       </SwiperSlide>
-      <SwiperSlide className={styles.SwiperSlide}>
-        <div className={styles.SlidePfp}></div>
-        <div className={styles.SlideContent}>
-        <p>slide 2</p>
+      <SwiperSlide>
+      <div className={styles.SwiperSlide}>
+          <div className={styles.SlidePfp}></div>
+          <div className={styles.SlideContent}>
+          <p>slide 1</p>
+          </div>
         </div>
       </SwiperSlide>
-      <SwiperSlide className={styles.SwiperSlide}>
-        <div className={styles.SlidePfp}></div>
-        <div className={styles.SlideContent}>
-            <p>slide 3</p>
+      <SwiperSlide>
+      <div className={styles.SwiperSlide}>
+          <div className={styles.SlidePfp}></div>
+          <div className={styles.SlideContent}>
+          <p>slide 1</p>
+          </div>
         </div>
       </SwiperSlide>
 
