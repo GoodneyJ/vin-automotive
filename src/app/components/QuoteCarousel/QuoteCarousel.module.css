@@ -1,3 +1,13 @@
+.SwiperContainer {
+  transition: all 0.2s ease;
+}
+.SwiperContainer .SwiperSlide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.2s ease;
+}
 .SwiperContainer .SwiperSlide .SlidePfp {
   height: 50px;
   width: 50px;
