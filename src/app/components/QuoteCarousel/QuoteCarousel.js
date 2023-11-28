@@ -1,7 +1,10 @@
 'use client'
-import React from 'react'
+import {React, useRef} from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
+
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+
 
 // import Swiper and modules styles
 import 'swiper/css';
@@ -14,51 +17,55 @@ import styles from './QuoteCarousel.module.css'
 
 export default function QuoteCarousel() {
 
-  
+  const swiperRef = useRef();
 
   return (
     <Swiper
       modules={[Navigation, Pagination]}
       spaceBetween={50}
       slidesPerView={1}
-      navigation
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
+      // Navigation arrows
+      onBeforeInit={(swiper) => {
+        swiperRef.current = swiper;
+      }}
+
       className={styles.SwiperContainer}
     >
       <SwiperSlide>
         <div className={styles.SwiperSlide}>
           <div className={styles.SlidePfp}></div>
-          <div className={styles.SlideContent}>
-          <p>slide 1</p>
-          </div>
+            <div className={styles.SlideContent}>
+              <p>slide 1</p>
+            </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
       <div className={styles.SwiperSlide}>
           <div className={styles.SlidePfp}></div>
-          <div className={styles.SlideContent}>
-          <p>slide 1</p>
+            <div className={styles.SlideContent}>
+              <p>slide 1</p>
+            </div>
           </div>
-        </div>
       </SwiperSlide>
       <SwiperSlide>
       <div className={styles.SwiperSlide}>
           <div className={styles.SlidePfp}></div>
-          <div className={styles.SlideContent}>
-          <p>slide 1</p>
-          </div>
-        </div>
+            <div className={styles.SlideContent}>
+              <p>slide 1</p>
+            </div>
+         </div>
       </SwiperSlide>
       <SwiperSlide>
       <div className={styles.SwiperSlide}>
           <div className={styles.SlidePfp}></div>
-          <div className={styles.SlideContent}>
-          <p>slide 1</p>
-          </div>
-        </div>
+            <div className={styles.SlideContent}>
+              <p>slide 1</p>
+            </div>
+          </div>  
       </SwiperSlide>
-
+      
+      <FaChevronRight className={styles.NextArrow} onClick={() => swiperRef.current?.slideNext()}/>
+      <FaChevronLeft className={styles.PrevArrow} onClick={() => swiperRef.current?.slidePrev()}/>
     </Swiper>
   )
 }

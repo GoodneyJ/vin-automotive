@@ -1,3 +1,6 @@
+.SwiperContainer {
+  height: 25vh;
+}
 .SwiperContainer .SwiperSlide {
   display: flex;
   justify-content: center;
@@ -19,4 +22,35 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.SwiperContainer .NextArrow, .SwiperContainer .PrevArrow {
+  color: #9715FF;
+  transition: all 0.2s ease;
+  font-size: 2rem;
+}
+.SwiperContainer .NextArrow:hover, .SwiperContainer .PrevArrow:hover {
+  color: #FF52CB;
+  filter: drop-shadow(0px 0px 7px #c77bb0);
+}
+.SwiperContainer .NextArrow {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+}
+.SwiperContainer .PrevArrow {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .NextArrow, .PrevArrow {
+    display: none;
+  }
 }/*# sourceMappingURL=QuoteCarousel.module.css.map */

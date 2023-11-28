@@ -1,5 +1,5 @@
 .SwiperContainer {
-
+   height: 25vh;
     .SwiperSlide {
         display: flex;
         justify-content: center;
@@ -26,4 +26,41 @@
         }
     }
 
+    .NextArrow, .PrevArrow {
+        color: #9715FF;
+        transition: all 0.2s ease;
+        font-size: 2rem;
+
+        &:hover {
+            color: #FF52CB;
+            filter: drop-shadow( 0px 0px 7px #c77bb0);
+        }
+    }
+
+    .NextArrow {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform:translateY(-50%);
+        z-index: 10;
+        cursor: pointer;
+    }
+
+    .PrevArrow {
+        position: absolute;
+        top:50%;
+        left: 0;
+        transform: translateY(-50%);
+        z-index: 10;
+        cursor: pointer;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+    .NextArrow, .PrevArrow {
+        display: none;
+        
+    }
 }
