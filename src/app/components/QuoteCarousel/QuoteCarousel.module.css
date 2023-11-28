@@ -1,12 +1,6 @@
 .SwiperContainer {
   height: 25vh;
 }
-.SwiperContainer .SwiperSlide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
 .SwiperContainer .SwiperSlide .SlidePfp {
   height: 50px;
   width: 50px;

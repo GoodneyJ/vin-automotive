@@ -43,7 +43,7 @@ export default function QuoteCarousel() {
       <div className={styles.SwiperSlide}>
           <div className={styles.SlidePfp}></div>
             <div className={styles.SlideContent}>
-              <p>slide 1</p>
+              <p>slide 2</p>
             </div>
           </div>
       </SwiperSlide>
@@ -51,7 +51,7 @@ export default function QuoteCarousel() {
       <div className={styles.SwiperSlide}>
           <div className={styles.SlidePfp}></div>
             <div className={styles.SlideContent}>
-              <p>slide 1</p>
+              <p>slide 3</p>
             </div>
          </div>
       </SwiperSlide>
@@ -59,7 +59,7 @@ export default function QuoteCarousel() {
       <div className={styles.SwiperSlide}>
           <div className={styles.SlidePfp}></div>
             <div className={styles.SlideContent}>
-              <p>slide 1</p>
+              <p>slide 4</p>
             </div>
           </div>  
       </SwiperSlide>
