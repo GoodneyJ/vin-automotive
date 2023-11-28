@@ -1,11 +1,28 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+
+  .swiper-button-prev, .swiper-button-next {
+    height: 50%;
+    
+    color: #9715FF;
+    transition: .2s all ease;
+
+    will-change: auto;
+
+  }
+
+  .swiper-button-prev:hover, .swiper-button-next:hover {
+      
+    color: #FF52CB;
+
+    text-shadow: 0 0px 15px rgba(247, 202, 233, 1)
+  
+}
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,6 +32,16 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+
+@media screen and (max-width: 500px) {
+
+
+  .swiper-button-prev, .swiper-button-next, .swiper-button-disabled {
+    display: none;
+    opacity: 0 !important;
+  }
+}
+
 
 html, body {
   overflow-x: hidden;

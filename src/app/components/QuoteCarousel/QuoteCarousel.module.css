@@ -1,1 +1,22 @@
-/*# sourceMappingURL=QuoteCarousel.module.css.map */
+.SwiperContainer .SwiperSlide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.SwiperContainer .SwiperSlide .SlidePfp {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #d3d3d3;
+  transform: translateY(25px);
+  box-shadow: 0 2px 3px #010101;
+}
+.SwiperContainer .SwiperSlide .SlideContent {
+  height: 150px;
+  width: 250px;
+  background-color: #9715FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=QuoteCarousel.module.css.map */

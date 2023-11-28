@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"QuoteCarousel.module.css"}
+{"version":3,"sources":["QuoteCarousel.module.scss","QuoteCarousel.module.css"],"names":[],"mappings":"AAEI;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,sBAAA;ACDR;ADGQ;EACI,YAAA;EACA,WAAA;EACA,kBAAA;EACA,yBAAA;EACA,2BAAA;EACA,6BAAA;ACDZ;ADIQ;EACI,aAAA;EACA,YAAA;EACA,yBAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;ACFZ","file":"QuoteCarousel.module.css"}
