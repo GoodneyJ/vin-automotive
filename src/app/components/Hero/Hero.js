@@ -7,7 +7,7 @@ import styles from './hero.module.css'
 export default function Hero() {
   return (
     <div className={styles.heroContainer}>
-        <Navbar />
+
 
         <p className={styles.pinkText}>Your experience is our passion.</p>
         <h1 className={styles.heroHeading}>We'll turn your car into the ride of your dreams</h1>

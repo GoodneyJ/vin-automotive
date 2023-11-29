@@ -1,0 +1,17 @@
+.TutorialsPageContainer {
+  height: 100vh;
+  background-color: #FF52CB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.TutorialsPageContainer .TutorialsContentContainer {
+  border-radius: 2px;
+  width: 80%;
+  height: 80%;
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: center;
+}/*# sourceMappingURL=tutorials.module.css.map */

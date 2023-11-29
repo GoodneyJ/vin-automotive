@@ -1,6 +1,7 @@
 'use client'
 
 import {React, useRef} from 'react'
+import Link from 'next/link'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 
@@ -75,7 +76,7 @@ export default function TutorialSection() {
           <FaChevronRight className={styles.NextArrow} onClick={() => swiperRef.current?.slideNext()}/>
           <FaChevronLeft className={styles.PrevArrow} onClick={() => swiperRef.current?.slidePrev()}/>
         </Swiper>
-        <button>Learn more</button>
+        <Link href="/tutorials"><button>Learn more</button></Link>
 
       </div>
 

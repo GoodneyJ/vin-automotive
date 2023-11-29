@@ -1,6 +1,6 @@
 'use client'
 import {React, useEffect, useState, useRef} from 'react'
-
+import Link from 'next/link'
 import styles from './navbar.module.css'
 
 export default function Navbar() {
@@ -33,13 +33,13 @@ export default function Navbar() {
       <div className={styles.navigationComponent}>
         <nav className={styles.navContainer}>
           <div className={styles.logo}>
-            <a>VIN</a>
+            <Link href="/">VIN</Link>
           </div>
           
           <div className={styles.fullMenu}>
-            <a>Home.</a>
+            <Link href="/">Home</Link>
             <a>About</a>
-            <a>Services</a>
+            <Link href="/services">Service</Link>
             <a>Content</a>
           </div>
 
@@ -53,10 +53,10 @@ export default function Navbar() {
         </nav>
 
         <div className={styles.sidemenu} ref={sidebarRef}>
-            <a>Home</a>
+            <Link href="/">Home</Link>
             <a>About</a>
-            <a>Services</a>
-            <a>Content</a>
+            <Link href="/services">Services</Link>
+            <Link href="/tutorials">Content</Link>
 
             {/* <button onClick={handleClick}></button> */}
         </div>

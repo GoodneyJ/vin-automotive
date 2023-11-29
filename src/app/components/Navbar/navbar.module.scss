@@ -1,6 +1,7 @@
-
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700;800&family=Inter:wght@400;600;800&family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap');
 
 .navigationComponent {
+
     z-index: 100;
     position: fixed;
     top: 0;
@@ -15,7 +16,7 @@
         align-items: center;
         justify-content: space-between;
         height: 45px;
-    
+
         .logo {
             margin-left: 2rem;
             font-size: 1.5rem;
@@ -24,6 +25,7 @@
             -webkit-text-fill-color: transparent;
             font-weight: bold;
             letter-spacing: 1.5px;
+
         }
     
         .burger, .fullMenu {

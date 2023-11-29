@@ -12,7 +12,9 @@
 }
 .ServiceCardContainer .CardContent {
   transition: all 0.2s ease;
+  visibility: hidden;
   opacity: 0;
+  -webkit-transition: -webkit-;
 }
 .ServiceCardContainer button:hover {
   background-color: #744f92;
@@ -23,6 +25,7 @@
   border: 2px solid #faa5e0;
 }
 .ServiceCardContainer:hover .CardContent {
+  visibility: visible;
   opacity: 1;
 }
 
