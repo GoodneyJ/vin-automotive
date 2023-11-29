@@ -48,7 +48,6 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
-  transition: all 0.2s ease;
 }
 .navigationComponent .navContainer .burgerContainer .burger {
   width: 20px;
@@ -56,11 +55,9 @@
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
-  transition: all 0.5s ease;
+  transition: transform 0.5s ease;
   margin: 0;
   z-index: 170000;
-  will-change: auto;
-  backface-visibility: hidden;
 }
 .navigationComponent .navContainer .burgerContainer .burger::before, .navigationComponent .navContainer .burgerContainer .burger::after {
   content: "";
@@ -70,7 +67,7 @@
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
-  transition: all 0.5s ease;
+  transition: transform 0.5s ease;
 }
 .navigationComponent .navContainer .burgerContainer .burger::before {
   transform: translateY(-10px);
@@ -82,7 +79,6 @@
   transform: translateX(-50px);
   background: transparent;
   box-shadow: none;
-  will-change: transform;
 }
 .navigationComponent .navContainer .burgerContainer.open .burger::before {
   transform: rotate(45deg) translate(35px, -35px);
@@ -96,7 +92,7 @@
   z-index: 100000;
   display: flex;
   position: fixed;
-  background-color: #333333;
+  background-color: #131212;
   right: 0;
   top: 0;
   height: 100vh;
@@ -111,9 +107,12 @@
 }
 .navigationComponent .sidemenu a {
   margin: 2rem;
+  font-size: 1.5rem;
+  transition: all 0.2s;
 }
 .navigationComponent .sidemenu a:hover {
-  color: blue;
+  color: #ff16f3;
+  cursor: pointer;
 }
 .navigationComponent .sidemenu button {
   position: absolute;

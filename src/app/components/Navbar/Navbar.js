@@ -44,7 +44,7 @@ export default function Navbar() {
           </div>
 
           <div id="menu-btn" className={styles.burgerContainer} ref={menuRef} onClick={handleClick}>
-            <div id="menu-burger" className={styles.burger}>
+            <div id="menu-burger" className={styles.burger} onClick={handleClick}>
             </div>
           </div>
           
@@ -53,7 +53,7 @@ export default function Navbar() {
         </nav>
 
         <div className={styles.sidemenu} ref={sidebarRef}>
-            <a>Home.</a>
+            <a>Home</a>
             <a>About</a>
             <a>Services</a>
             <a>Content</a>
