@@ -13,8 +13,9 @@
 
     .CardContent {
         transition: all 0.2s ease;
+        visibility: hidden;
         opacity: 0;
-
+        -webkit-transition: -webkit-
 
     }
 
@@ -29,8 +30,9 @@
         box-shadow: 0px 0px 20px 3px #FF52CB;
         border: 2px solid #faa5e0;
         .CardContent {
+            visibility: visible;
             opacity: 1;
-
+            
         }
 
     }
