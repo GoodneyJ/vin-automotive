@@ -58,7 +58,7 @@ export default function Navbar() {
             <a>Services</a>
             <a>Content</a>
 
-            <button onClick={handleClick}></button>
+            {/* <button onClick={handleClick}></button> */}
         </div>
     </div>
   )

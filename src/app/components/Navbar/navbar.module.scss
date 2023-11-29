@@ -59,6 +59,7 @@
                 box-shadow: 0 2px 5px rgba(255,101,47,.2);
                 transition: all 0.5s ease;
                 margin: 0;
+                z-index: 170000;
                 &::before, &::after {
                     content: '';
                     position: absolute;
@@ -82,12 +83,27 @@
             }
         }
     
+
     
     }
-
+    .navContainer .burgerContainer.open .burger {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+        
+        &::before {
+            transform: rotate(45deg) translate(35px, -35px);
+            background-color: #FF52CB;
+        }
+    
+        &::after {
+            transform: rotate(-45deg) translate(35px, 35px);
+            background-color: #FF52CB;
+        }          
+    }
     .sidemenu {
         z-index: 100000;
-        display: none;
+        display: flex;
         position: fixed;
         background-color: #333333;
         right: 0;
@@ -100,7 +116,7 @@
         will-change: transform, display;
         color:#ff53cb;
         transition: all 0.2s ease;
-        
+        transform: translateX(100%);
         a {
             margin: 2rem;
 
@@ -115,7 +131,7 @@
             top: 0;
             right:0;
             margin: 1rem;
-    
+
             &::before, &::after {
                 content: '';
                 position: absolute;
@@ -142,7 +158,7 @@
     }
     
     .sidemenu.display {
-        display: flex;
+
         transform: translateX(0px);
     }
     

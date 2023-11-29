@@ -1,6 +1,6 @@
 .TutorialSectionContainer .TutorialSectionContent {
   background-color: #FF52CB;
-  height: 100vh;
+  height: 55vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,10 +8,9 @@
 }
 .TutorialSectionContainer .TutorialSectionContent .RecentVideosContainer {
   background-color: #222121;
-  height: 80%;
-  width: 80%;
+  height: 35%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
 }
 .TutorialSectionContainer .TutorialSectionContent .RecentVideosContainer .VidCard {
@@ -19,12 +18,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Montserrat";
 }
 .TutorialSectionContainer .TutorialSectionContent .RecentVideosContainer .VidCard .ThumbNail {
   background-color: #dedede;
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
   border-radius: 2px;
 }
 .TutorialSectionContainer .TutorialSectionContent .RecentVideosContainer .VidCard h4 {
@@ -37,8 +35,34 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  display: -webkit-box;
+  display: none;
   font-size: 0.85rem;
+}
+.TutorialSectionContainer .TutorialSectionContent .RecentVideosContainer .NextArrow, .TutorialSectionContainer .TutorialSectionContent .RecentVideosContainer .PrevArrow {
+  color: #9715FF;
+  transition: all 0.2s ease;
+  font-size: 2rem;
+  opacity: 0;
+}
+.TutorialSectionContainer .TutorialSectionContent .RecentVideosContainer .NextArrow:hover, .TutorialSectionContainer .TutorialSectionContent .RecentVideosContainer .PrevArrow:hover {
+  color: #FF52CB;
+  filter: drop-shadow(0px 0px 7px #c77bb0);
+}
+.TutorialSectionContainer .TutorialSectionContent .NextArrow {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+}
+.TutorialSectionContainer .TutorialSectionContent .PrevArrow {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
 }
 .TutorialSectionContainer .TutorialSectionContent button {
   background-color: #dedede;
@@ -75,4 +99,13 @@
 }
 .TutorialSectionContainer .AffiliatesBar .Thanks .PinkText {
   color: #FF52CB;
+}
+
+@media screen and (min-width: 500px) {
+  .VidCard p {
+    display: -webkit-box !important;
+  }
+  .NextArrow, .PrevArrow {
+    opacity: 1 !important;
+  }
 }/*# sourceMappingURL=TutorialSection.module.css.map */

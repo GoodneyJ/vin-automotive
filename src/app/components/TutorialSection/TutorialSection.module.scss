@@ -2,7 +2,7 @@
 
     .TutorialSectionContent {
         background-color: #FF52CB;
-        height: 100vh;
+        height: 55vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -10,30 +10,24 @@
 
         .RecentVideosContainer {
             background-color: #222121;
-            height: 80%;
-            width: 80%;
+            height: 35%;
+            width: 100%;
             display: flex;
-            flex-direction: column;
             justify-content: space-evenly;
-
             .VidCard {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                font-family: "Montserrat";
                 .ThumbNail {
                     background-color: #dedede;
-                    height: 100px;
-                    width: 100px;
+                    height: 70px;
+                    width: 70px;
                     border-radius: 2px;
                 }
-
                 h4 {
                     font-weight: 700;
-
                 }
-                
                 p {
                     width:  50%;
                     margin: 0 auto;
@@ -41,13 +35,38 @@
                     -webkit-box-orient: vertical;
                     overflow: hidden;
                     text-overflow: ellipsis;
-                    display: -webkit-box;
 
+                    display: none;
                     font-size: 0.85rem;
                 }
             }
+            .NextArrow, .PrevArrow {
+                color: #9715FF;
+                transition: all 0.2s ease;
+                font-size: 2rem;
+                opacity: 0;
+                &:hover {
+                    color: #FF52CB;
+                    filter: drop-shadow( 0px 0px 7px #c77bb0);
+                }
+            }
         }
-
+        .NextArrow {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform:translateY(-50%);
+            z-index: 10;
+            cursor: pointer;
+        }
+        .PrevArrow {
+            position: absolute;
+            top:50%;
+            left: 0;
+            transform: translateY(-50%);
+            z-index: 10;
+            cursor: pointer;
+        }
         button {
             background-color: #dedede;
             color: #c73c9d;
@@ -55,15 +74,8 @@
             z-index: 10000;
             height: 35px;
             width: 175px;
-
         }
-
-
-
     }
-
-
-
     .AffiliatesBar {
         background-color: #222121;
         width: 100%;
@@ -99,3 +111,16 @@
     }
 }
 
+@media screen and (min-width: 500px) {
+
+    .VidCard {
+        p {
+            display: -webkit-box !important;
+        }
+    }
+
+    .NextArrow, .PrevArrow {
+        opacity: 1 !important;
+
+    }
+}

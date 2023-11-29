@@ -1,41 +1,80 @@
 'use client'
 
-import React, { useEffect } from 'react'
+import {React, useRef} from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper/modules';
+
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 
 
 
+// import Swiper and modules styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
-// Import Swiper styles
-import 'swiper/scss';
-import 'swiper/scss/navigation';
-import 'swiper/scss/pagination';
-import 'swiper/scss/scrollbar';
 import styles from './TutorialSection.module.css'
 
 export default function TutorialSection() {
   
+  const swiperRef = useRef();
+
   return (
     <div className={styles.TutorialSectionContainer}>
       <div className={styles.TutorialSectionContent}>
 
-        <div className={styles.RecentVideosContainer}>
-          <div className={styles.VidCard}>
-              <div className={styles.ThumbNail}></div>
-              <h4>Card One</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-          </div>
-          <div className={styles.VidCard}>
-              <div className={styles.ThumbNail}></div>
-            <h4>Card One</h4>
-             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p> 
-          </div>
-          <div className={styles.VidCard}>
-              <div className={styles.ThumbNail}></div>
-            <h4>Card One</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>          
-          </div>
-        </div>
+              <Swiper
+              cssMode={true}
+              modules={[Navigation, Pagination]}
+              spaceBetween={50}
+              slidesPerView={3}
+              // Navigation arrows
+              onBeforeInit={(swiper) => {
+                swiperRef.current = swiper;
+              }}
+
+              className={styles.RecentVideosContainer}
+            >
+              <SwiperSlide className={styles.VidCard}>
+                <div className={styles.ThumbNail}></div>
+                <h4>Slide One</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p> 
+              </SwiperSlide>
+
+              <SwiperSlide className={styles.VidCard}>
+                <div className={styles.ThumbNail}></div>
+                <h4>Slide Two</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p> 
+              </SwiperSlide>
+
+              <SwiperSlide className={styles.VidCard}>
+                <div className={styles.ThumbNail}></div>
+                <h4>Slide Three</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p> 
+              </SwiperSlide>
+
+              <SwiperSlide className={styles.VidCard}>
+                <div className={styles.ThumbNail}></div>
+                <h4>Slide One</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p> 
+              </SwiperSlide>
+
+              <SwiperSlide className={styles.VidCard}>
+                <div className={styles.ThumbNail}></div>
+                <h4>Slide Two</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p> 
+              </SwiperSlide>
+
+              <SwiperSlide className={styles.VidCard}>
+                <div className={styles.ThumbNail}></div>
+                <h4>Slide Three</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p> 
+              </SwiperSlide>
+
+          <FaChevronRight className={styles.NextArrow} onClick={() => swiperRef.current?.slideNext()}/>
+          <FaChevronLeft className={styles.PrevArrow} onClick={() => swiperRef.current?.slidePrev()}/>
+        </Swiper>
         <button>Learn more</button>
 
       </div>
