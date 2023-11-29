@@ -59,6 +59,8 @@
   transition: all 0.5s ease;
   margin: 0;
   z-index: 170000;
+  will-change: auto;
+  backface-visibility: hidden;
 }
 .navigationComponent .navContainer .burgerContainer .burger::before, .navigationComponent .navContainer .burgerContainer .burger::after {
   content: "";
@@ -80,6 +82,7 @@
   transform: translateX(-50px);
   background: transparent;
   box-shadow: none;
+  will-change: transform;
 }
 .navigationComponent .navContainer .burgerContainer.open .burger::before {
   transform: rotate(45deg) translate(35px, -35px);

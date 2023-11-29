@@ -60,6 +60,8 @@
                 transition: all 0.5s ease;
                 margin: 0;
                 z-index: 170000;
+                will-change: auto;
+                backface-visibility: hidden;
                 &::before, &::after {
                     content: '';
                     position: absolute;
@@ -90,7 +92,7 @@
         transform: translateX(-50px);
         background: transparent;
         box-shadow: none;
-        
+        will-change: transform;
         &::before {
             transform: rotate(45deg) translate(35px, -35px);
             background-color: #FF52CB;
