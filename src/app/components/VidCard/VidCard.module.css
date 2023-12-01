@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 3rem;
 }
 .VidCardContainer .Thumbnail {
   height: 100px;
@@ -16,11 +17,17 @@
   color: #FF52CB;
 }
 .VidCardContainer p {
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
-  display: -webkit-box;
+  display: none;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+@media screen and (min-width: 500px) {
+  .VidCardContainer p {
+    display: -webkit-box;
+  }
 }/*# sourceMappingURL=VidCard.module.css.map */

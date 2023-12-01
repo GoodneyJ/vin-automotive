@@ -24,8 +24,7 @@ export default function TutorialSection() {
   return (
     <div className={styles.TutorialSectionContainer}>
       <div className={styles.TutorialSectionContent}>
-
-              <Swiper
+        <Swiper
               cssMode={true}
               modules={[Navigation, Pagination]}
               spaceBetween={50}
@@ -76,7 +75,7 @@ export default function TutorialSection() {
           <FaChevronRight className={styles.NextArrow} onClick={() => swiperRef.current?.slideNext()}/>
           <FaChevronLeft className={styles.PrevArrow} onClick={() => swiperRef.current?.slidePrev()}/>
         </Swiper>
-        <Link href="/tutorials"><button>Learn more</button></Link>
+        <Link href="/tutorials" className={styles.TutorialCTA}>Learn more</Link>
 
       </div>
 

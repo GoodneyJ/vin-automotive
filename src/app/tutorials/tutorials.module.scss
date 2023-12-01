@@ -1,20 +1,38 @@
 
 
 .TutorialsPageContainer {
-    height: 100vh;
+    height: 175vh;
     background-color: #FF52CB;
     display: flex;
     justify-content: center;
     align-items: center;
     .TutorialsContentContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         border-radius: 2px;
         width: 80%;
         height: 80%;
         background-color: #1e1e1e;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: center;
 
+
+        .TutorialsRowOne, .TutorialsRowTwo {
+
+        }
+    }
+}
+
+
+@media screen and (min-width: 500px) {
+    .TutorialsPageContainer {
+        height: 100vh;
+        .TutorialsContentContainer {
+            height: 60%;
+            .TutorialsRowOne, .TutorialsRowTwo {
+                display: flex;
+
+            }
+        }
     }
 }

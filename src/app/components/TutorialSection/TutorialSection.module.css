@@ -64,13 +64,17 @@
   z-index: 10;
   cursor: pointer;
 }
-.TutorialSectionContainer .TutorialSectionContent button {
+.TutorialSectionContainer .TutorialSectionContent .TutorialCTA {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #dedede;
   color: #c73c9d;
   transform: translateY(-10px);
   z-index: 10000;
   height: 35px;
   width: 175px;
+  text-align: center;
 }
 .TutorialSectionContainer .AffiliatesBar {
   background-color: #222121;

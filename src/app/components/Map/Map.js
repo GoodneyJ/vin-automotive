@@ -44,7 +44,7 @@ export default function Map() {
         initMap()
     }, [])
   return (
-    <div style={{ height: '600px'}} ref={mapRef}/>
-
+    <div style={{ height: '600px'}} ref={mapRef}>
+    </div>
   )
 }

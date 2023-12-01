@@ -40,16 +40,13 @@ export default function Navbar() {
             <Link href="/">Home</Link>
             <a>About</a>
             <Link href="/services">Service</Link>
-            <a>Content</a>
+            <Link href="/tutorials">Content</Link>
           </div>
 
           <div id="menu-btn" className={styles.burgerContainer} ref={menuRef} onClick={handleClick}>
             <div id="menu-burger" className={styles.burger} onClick={handleClick}>
             </div>
           </div>
-          
-
-          
         </nav>
 
         <div className={styles.sidemenu} ref={sidebarRef}>
@@ -57,7 +54,6 @@ export default function Navbar() {
             <a>About</a>
             <Link href="/services">Services</Link>
             <Link href="/tutorials">Content</Link>
-
             {/* <button onClick={handleClick}></button> */}
         </div>
     </div>
