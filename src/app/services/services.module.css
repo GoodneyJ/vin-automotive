@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;300;400&display=swap");
+.ServicesPageContainer {
+  font-family: "Montserrat";
+  height: 100vh;
+  background: linear-gradient(-180deg, rgb(12, 12, 12), rgb(37, 18, 31));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ServicesPageContainer h2 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  transform: scaleY(125%);
+  margin: 1rem 0;
+}
+.ServicesPageContainer .InterfaceContainer {
+  margin-top: 1rem;
+  display: flex;
+}
+.ServicesPageContainer .InterfaceContainer .InterfaceRow {
+  justify-content: space-between;
+}
+.ServicesPageContainer .InterfaceContainer .InterfaceRow .InterfaceBtn {
+  text-align: center;
+  margin: 0.5rem 0.65rem;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+  border: 1px solid #9B347C;
+  padding: 0.25rem;
+  font-size: 0.65rem;
+  white-space: nowrap;
+  transition: 0.2s all ease;
+}
+.ServicesPageContainer .InterfaceContainer .InterfaceRow .InterfaceBtn:hover {
+  background-color: #9B347C;
+  border: 1.5px solid #d9d9d9;
+  cursor: pointer;
+}
+.ServicesPageContainer .DisplayContainer {
+  margin: 1rem 0;
+  height: 50vh;
+  width: 90%;
+  border-radius: 2px;
+  background-color: #1E1E1E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ServicesPageContainer .DisplayContainer .DisplayColumn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ServicesPageContainer .DisplayContainer .DisplayColumn h2 {
+  font-size: 1.15rem;
+  margin-bottom: 0rem;
+}
+.ServicesPageContainer .DisplayContainer .DisplayColumn .Description {
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 80%;
+  margin: 1rem auto;
+  display: -webkit-box;
+}
+.ServicesPageContainer .DisplayContainer .DisplayColumn button {
+  background-color: #FF52CB;
+  margin: 0 1rem;
+  font-size: 0.85rem;
+  padding: 0.25rem;
+  border-radius: 2px;
+  color: #1E1E1E;
+}
+.ServicesPageContainer .DisplayContainer .DisplayColumn .img {
+  margin: 1.5rem 0;
+}/*# sourceMappingURL=services.module.css.map */

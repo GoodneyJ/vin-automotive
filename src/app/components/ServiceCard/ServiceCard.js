@@ -6,7 +6,12 @@ import styles from './ServiceCard.module.css'
 
 export default function ServiceCard(props) {
 
-
+{/* <CardContainer
+  onMouseEnter={() => setIsHovered(true)}
+  onMouseLeave={() => setIsHovered(false)}
+>
+ {isHovered && <HiddenInfo />}
+</CardContainer> */}
 
   return (
     <div id={`${props.id}`} className={`bg ${styles.ServiceCardContainer}`}>
