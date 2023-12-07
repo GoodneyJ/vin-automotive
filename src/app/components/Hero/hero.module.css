@@ -42,4 +42,7 @@
   color: #1a1919;
   font-weight: 600;
   box-shadow: 1px 1px 3px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=hero.module.css.map */

@@ -49,6 +49,7 @@ html, body {
   overflow-x: hidden;
   color: white;
   font-family: 'Montserrat';
+  scroll-behavior: smooth;
 }
 
 body {

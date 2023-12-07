@@ -4,7 +4,7 @@
     height: 100vh;
     background: linear-gradient(-180deg, rgb(12, 12, 12), rgb(37, 18, 31));;
     display: flex;
-    justify-content: center;
+    padding: 5rem 0;
     align-items: center;
     flex-direction: column;
     h2 {
@@ -48,54 +48,7 @@
         }
     }
 
-    .DisplayContainer {
-        margin: 1rem 0;
-        height: 50vh;
-        width: 90%;
-        border-radius: 2px;
-        background-color:#1E1E1E;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
 
 
-        .DisplayColumn {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            
-            h2 {
-                font-size: 1.15rem;
-                margin-bottom: 0rem;
-            }
-
-            .Description {
-                -webkit-line-clamp: 3;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                width: 80%;
-                margin: 1rem auto;
-                display: -webkit-box ;
-            }
-
-            button {
-
-                background-color: #FF52CB;
-                margin: 0 1rem;
-                font-size: .85rem;
-                padding: .25rem;
-                border-radius: 2px;
-                color:#1E1E1E;
-
-            }
-
-            .img {
-                margin: 1.5rem 0;
-            }
-        }
-    }
 }
 

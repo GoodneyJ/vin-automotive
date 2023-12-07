@@ -33,14 +33,15 @@ export default function Navbar() {
       <div className={styles.navigationComponent}>
         <nav className={styles.navContainer}>
           <div className={styles.logo}>
-            <Link href="/">VIN</Link>
+            <Link href="#HERO" onClick={handleClick}>VIN</Link>
           </div>
           
           <div className={styles.fullMenu}>
-            <Link href="/">Home</Link>
-            <a>About</a>
+            <Link href="#HERO">Home</Link>
+            <Link href="">About</Link>
             <Link href="/services">Service</Link>
             <Link href="/tutorials">Content</Link>
+            <Link href='#CONTACT'>Contact</Link>
           </div>
 
           <div id="menu-btn" className={styles.burgerContainer} ref={menuRef} onClick={handleClick}>
@@ -50,10 +51,11 @@ export default function Navbar() {
         </nav>
 
         <div className={styles.sidemenu} ref={sidebarRef}>
-            <Link href="/">Home</Link>
-            <a>About</a>
+            <Link href="#HERO"onClick={handleClick}>Home</Link>
+            <Link href="#">About</Link>
             <Link href="/services">Services</Link>
             <Link href="/tutorials">Content</Link>
+            <Link href='#CONTACT' onClick={handleClick}>Contact</Link>
             {/* <button onClick={handleClick}></button> */}
         </div>
     </div>

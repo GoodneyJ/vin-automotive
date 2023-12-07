@@ -1,4 +1,6 @@
 import React from 'react'
+import Link from 'next/link';
+
 import ServiceCard from '../ServiceCard/ServiceCard'
 
 import styles from './ServiceSection.module.css'
@@ -31,7 +33,7 @@ export default function ServiceSection() {
         <div className={styles.ServiceCTAContainer}>
             <div className={styles.ServiceCTA}>
                 <p>Don't See it here? Check out our full list of services!</p>
-                <button>Services</button>
+                <Link href='/services'>Services</Link>
             </div>
         </div>
     </div>

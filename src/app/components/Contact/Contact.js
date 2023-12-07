@@ -4,7 +4,7 @@ import styles from './contact.module.css'
 
 export default function Contact() {
   return (
-    <div className={styles.contactContainer}>
+    <div id="CONTACT" className={styles.contactContainer}>
 
         <h2>Book an appointment!</h2>
         <p>Any questions or concerns?</p>
