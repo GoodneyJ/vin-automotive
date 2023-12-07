@@ -33,11 +33,11 @@ export default function Navbar() {
       <div className={styles.navigationComponent}>
         <nav className={styles.navContainer}>
           <div className={styles.logo}>
-            <Link href="#HERO" onClick={handleClick}>VIN</Link>
+            <Link href="/" onClick={handleClick}>VIN</Link>
           </div>
           
           <div className={styles.fullMenu}>
-            <Link href="#HERO">Home</Link>
+            <Link href="/">Home</Link>
             <Link href="">About</Link>
             <Link href="/services">Service</Link>
             <Link href="/tutorials">Content</Link>
