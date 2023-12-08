@@ -7,6 +7,7 @@ import Testimonials from './components/Testimonials/Testimonials'
 import Map from './components/Map/Map'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
+import UpBtn from './components/UpBtn/UpBtn'
 export default function Page() {
   return (
     <main >
@@ -19,6 +20,7 @@ export default function Page() {
       <Map />
       <Contact />
       <Footer />
+      <UpBtn />
     </main>
   )
 }

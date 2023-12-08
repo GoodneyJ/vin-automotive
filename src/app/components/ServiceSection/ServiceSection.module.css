@@ -52,7 +52,7 @@
   text-align: center;
   width: 50%;
 }
-.ServiceWrapper .ServiceCTAContainer .ServiceCTA button {
+.ServiceWrapper .ServiceCTAContainer .ServiceCTA .ctaBtn {
   display: flex;
   justify-content: center;
   align-items: center;

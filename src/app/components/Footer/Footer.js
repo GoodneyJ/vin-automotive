@@ -1,6 +1,9 @@
 import React from 'react'
 
-
+import Link from 'next/link';
+import { TiSocialTwitter } from "react-icons/ti";
+import { FaFacebookF, FaPhone } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa6";
 import styles from './footer.module.css'
 
 export default function Footer() {
@@ -14,16 +17,16 @@ export default function Footer() {
                 <p>vincustomerservice@vinautomotive.com</p>
                 <h4>Socials:</h4>
                 <div className={styles.socialsContainer}>
-                    <div className={styles.socialItem}></div>
-                    <div className={styles.socialItem}></div>
-                    <div className={styles.socialItem}></div>
-                    <div className={styles.socialItem}></div>
+                    <TiSocialTwitter id="twitter"/>
+                    <FaFacebookF id="facebook"/>
+                    <FaYoutube id="youtube"/>
+                    <FaPhone id="phone"/>
                 </div>
             </div>
             <div className={styles.quickLinks}>
-                <a>Services</a>
-                <a>About</a>
-                <a>Tutorials</a>
+                <Link href="/services">Services</Link>
+                <Link href="/">About</Link>
+                <Link href="/tutorials">Tutorials</Link>
             </div>
             
             <div className={styles.affiliateLinks}>
@@ -36,10 +39,6 @@ export default function Footer() {
 
         <div className={styles.bottomRow}>
             <p>Designed & Developed by <span>JGWebDevelopment</span></p>
-
-            <button className={styles.backToTop}>
-                ^
-            </button>
         </div>
     </div>
   )

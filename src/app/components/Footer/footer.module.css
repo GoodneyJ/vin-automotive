@@ -1,6 +1,7 @@
 .footerContainer {
   background-color: #141414;
   padding: 1rem 0;
+  font-family: "Montserrat";
 }
 .footerContainer .footerContent {
   display: flex;
@@ -11,6 +12,7 @@
 .footerContainer .footerContent .contactInfo h4 {
   font-family: "Montserrat";
   font-weight: 600;
+  margin: 0.5rem 0;
 }
 .footerContainer .footerContent .contactInfo p {
   font-family: "Inter";
@@ -21,23 +23,36 @@
 }
 .footerContainer .footerContent .contactInfo .socialsContainer {
   display: flex;
+  align-items: center;
+  margin: 0.5rem 0.25rem;
+  font-size: 1.15rem;
 }
-.footerContainer .footerContent .contactInfo .socialsContainer .socialItem {
+.footerContainer .footerContent .contactInfo .socialsContainer svg {
   margin-right: 0.5rem;
-  background-color: #d0d0d0;
-  border-radius: 50%;
   height: 20px;
   width: 20px;
 }
-.footerContainer .footerContent .contactInfo .socialsContainer .socialItem:hover {
+.footerContainer .footerContent .contactInfo .socialsContainer svg:hover {
   cursor: pointer;
 }
 .footerContainer .footerContent .quickLinks {
   margin: 0.5rem 0;
 }
+.footerContainer .footerContent .quickLinks a {
+  margin-right: 0.5rem;
+  transition: all 0.2s ease;
+  will-change: color;
+}
+.footerContainer .footerContent .quickLinks a:hover {
+  cursor: pointer;
+  color: #FF52CB;
+}
 .footerContainer .footerContent .affiliateLinks {
   display: flex;
   flex-direction: column;
+}
+.footerContainer .footerContent .affiliateLinks h4 {
+  font-weight: 600;
 }
 .footerContainer .bottomRow {
   display: flex;

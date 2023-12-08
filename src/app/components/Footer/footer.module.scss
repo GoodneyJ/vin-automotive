@@ -1,6 +1,7 @@
 .footerContainer {
     background-color: #141414;
     padding: 1rem 0;
+    font-family: 'Montserrat';
     .footerContent {
         display: flex;
         width: 90%;
@@ -11,6 +12,7 @@
             h4 {
                 font-family: 'Montserrat';
                 font-weight: 600;
+                margin: .5rem 0;
             }
 
             p {
@@ -24,10 +26,12 @@
             .socialsContainer {
                 display: flex;
 
-                .socialItem {
+                align-items: center;
+                margin: .5rem .25rem;
+                font-size: 1.15rem;
+                svg {
                     margin-right: .5rem;
-                    background-color: #d0d0d0;
-                    border-radius: 50%;
+
                     height: 20px;
                     width: 20px;
 
@@ -40,11 +44,30 @@
 
         .quickLinks {
             margin: 0.5rem 0;
+
+            a {
+                margin-right: .5rem;
+                transition: all 0.2s ease;
+                will-change: color;
+
+                &:hover {
+                    cursor: pointer;
+                    color:#FF52CB;
+                }
+            }
         }
 
         .affiliateLinks {
             display: flex;
             flex-direction: column;
+            
+            h4 {
+                font-weight: 600;
+            }
+
+            a {
+
+            }
         }
     }
 

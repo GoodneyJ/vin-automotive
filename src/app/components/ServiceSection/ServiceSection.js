@@ -33,7 +33,7 @@ export default function ServiceSection() {
         <div className={styles.ServiceCTAContainer}>
             <div className={styles.ServiceCTA}>
                 <p>Don't See it here? Check out our full list of services!</p>
-                <Link href='/services'>Services</Link>
+                <Link href='/services' className={styles.ctaBtn}>Services</Link>
             </div>
         </div>
     </div>
