@@ -1,8 +1,10 @@
 'use client'
 import {react, useState} from 'react'
 
+
 import Navbar from '../components/Navbar/Navbar'
 import VidCard from '../components/VidCard/VidCard'
+import Contact from '../components/Contact/Contact'
 
 import styles from './tutorials.module.css'
 import globals from '../globals.css'
@@ -35,7 +37,7 @@ export default function page() {
           </div>  
         </div>
     </div>
-
+    <Contact />
     {showModal ? <VideoModal handleClick={() => handleClick()}/> : ''}
     </>
     )

@@ -2,7 +2,7 @@
 
 .navigationComponent {
 
-    z-index: 100;
+    z-index: 100000;
     position: fixed;
     top: 0;
     left: 0;
@@ -64,7 +64,7 @@
                 box-shadow: 0 2px 5px rgba(255,101,47,.2);
                     transition: transform 0.5s ease;
                 margin: 0;
-                z-index: 170000;
+                z-index: 170000 !important;
                 &::before, &::after {
                     content: '';
                     position: absolute;

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700;800&family=Inter:wght@400;600;800&family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap");
 .navigationComponent {
-  z-index: 100;
+  z-index: 100000;
   position: fixed;
   top: 0;
   left: 0;
@@ -59,7 +59,7 @@
   box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
   transition: transform 0.5s ease;
   margin: 0;
-  z-index: 170000;
+  z-index: 170000 !important;
 }
 .navigationComponent .navContainer .burgerContainer .burger::before, .navigationComponent .navContainer .burgerContainer .burger::after {
   content: "";

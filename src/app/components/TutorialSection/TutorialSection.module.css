@@ -71,7 +71,7 @@
   background-color: #dedede;
   color: #c73c9d;
   transform: translateY(-10px);
-  z-index: 10000;
+  z-index: 1500;
   height: 35px;
   width: 175px;
   text-align: center;
@@ -79,9 +79,11 @@
 .TutorialSectionContainer .AffiliatesBar {
   background-color: #222121;
   width: 100%;
-  height: 30vh;
+  height: 20vh;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .TutorialSectionContainer .AffiliatesBar .Thanks {
   display: flex;
@@ -94,8 +96,7 @@
   color: #222121;
   border-radius: 2px;
   font-size: 0.95rem;
-  z-index: 15000;
-  transform: translateY(-30px);
+  transform: translateY(-70px);
 }
 .TutorialSectionContainer .AffiliatesBar .Thanks h4 {
   width: 100%;
@@ -103,6 +104,12 @@
 }
 .TutorialSectionContainer .AffiliatesBar .Thanks .PinkText {
   color: #FF52CB;
+}
+.TutorialSectionContainer .AffiliatesBar .Groups {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  transform: translateY(-30px);
 }
 
 @media screen and (min-width: 500px) {

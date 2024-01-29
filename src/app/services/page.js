@@ -3,6 +3,7 @@ import {React, useRef, useEffect, useState} from 'react'
 
 import Navbar from '../components/Navbar/Navbar'
 import DisplayContent from '../components/DisplayContent/DisplayContent'
+import Contact from '../components/Contact/Contact'
 import styles from './services.module.css'
 
 export default function Page() {
@@ -82,6 +83,7 @@ export default function Page() {
   }
 
   return (
+  <>
     <div className={styles.ServicesPageContainer}>
       <Navbar />
 
@@ -158,7 +160,10 @@ export default function Page() {
           content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
           img="/pngegg.png"
           passThru={WldOthr}
-        />               
+        />
+
+
+           
         <style jsx>
           {`
             .active {
@@ -173,5 +178,7 @@ export default function Page() {
           `}
         </style>
     </div>
+    <Contact />
+  </>
   )
 }

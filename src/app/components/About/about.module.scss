@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 2rem;
+
     border-top: 2px solid #FF52CB;
     border-bottom: 2px solid #FF52CB;
     .image {
@@ -18,12 +18,15 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 1.5rem;
 
         p {
             text-align: center;
-            font-size: .55rem;
-            width: 70%;
+            font-size: .95rem;
+            width: 90%;
             margin-top: 1rem;
+            font-weight: 400;
+            font-family: 'montserrat'
         }
 
         .aboutBtn {

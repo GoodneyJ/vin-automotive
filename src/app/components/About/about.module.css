@@ -4,7 +4,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 2rem;
   border-top: 2px solid #FF52CB;
   border-bottom: 2px solid #FF52CB;
 }
@@ -18,12 +17,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 1.5rem;
 }
 .aboutContainer .aboutContent p {
   text-align: center;
-  font-size: 0.55rem;
-  width: 70%;
+  font-size: 0.95rem;
+  width: 90%;
   margin-top: 1rem;
+  font-weight: 400;
+  font-family: "montserrat";
 }
 .aboutContainer .aboutContent .aboutBtn {
   margin-top: 1rem;

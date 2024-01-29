@@ -13,10 +13,10 @@ export default function Contact() {
             <input type="text" placeholder="name"/>
             <input type="text" placeholder="email" />
             <select id="cars" name="cars" placeholder="what kind of work do you need?">
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="fiat">Fiat</option>
-                <option value="audi">Audi</option>
+                <option value="Maintenance">Maintenance</option>
+                <option value="Diagnosis">Diagnosis</option>
+                <option value="Repair">Replace / Repair</option>
+                <option value="Paint & Body">Paint & Body</option>
             </select>
             <textarea></textarea>
         </form>

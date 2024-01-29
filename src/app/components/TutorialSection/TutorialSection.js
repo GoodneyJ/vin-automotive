@@ -86,6 +86,13 @@ export default function TutorialSection() {
           <p>Thanks to our <span className={styles.PinkText}>friends</span>, <span className={styles.PinkText}>partners</span> & <span className={styles.PinkText}>affiliates!</span></p>
       </div>
 
+      <div className={styles.Groups}>
+        <p>affilliate 1</p>
+        <p>affilliate 2</p>
+        <p>affilliate 3</p>
+        
+      </div>
+
       </div>
     </div>
   )

@@ -10,16 +10,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     .CloseModal {
         position: absolute;
         top:75px;
         right: 8px;
-        background-color: blue;
-        height: 25px;
-        width: 25px;
+        background-color: rgb(27, 27, 27);
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
+        color: #cf0a94;
+        cursor: pointer;
+        transition: .2s all ease;
+        &:hover {
+            
+            color: #ff0db6;
+            background-color: rgb(0, 0, 0);
+        }
     }
 
     .Video {

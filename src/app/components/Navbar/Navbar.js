@@ -42,7 +42,7 @@ export default function Navbar() {
           
           <div className={styles.fullMenu}>
             <Link href="/">Home</Link>
-            <Link href="">About</Link>
+            <Link href="#ABOUT">About</Link>
             <Link href="/services">Service</Link>
             <Link href="/tutorials">Content</Link>
             <Link href='#CONTACT'>Contact</Link>
