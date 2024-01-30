@@ -22,7 +22,7 @@ export default function ServiceSection() {
                     <ServiceCard id={'CardThree'} title={'Tire & Wheel work'} description={"If you've got a flat, or need balancing & rotatations we'll get you on the road riding smooth!"}/>
                 </div>
                 <div className={styles.GalleryRowTwo}>
-                    {/* <ServiceCard id={'CardFour'} title={''}/> */}
+                    <ServiceCard id={'CardFour'} title={'Body & Paint'} description={"From scratches to paint jobs & body work we've got you covered!"}/>
                     <ServiceCard id={'CardFive'} title={'Diagnose & Repair'} description={"We have tried & tested procedures to accurately diagnose any issue you might have"}/>
                     <ServiceCard id={'CardSix'} title={'Welding & Exhaust work'} description={"Exhaust work can be intimidating, we know what to look for and how to keep that check engine off without breaking your bank"}/>
                 </div>

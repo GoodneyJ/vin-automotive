@@ -108,56 +108,56 @@ export default function Page() {
 
         <DisplayContent
           title="Motorcycle Service & Repair"
-          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+          content={<><p>Oil Changes</p><p>Brake Components</p><p>Chain Replacement & Repair</p></>}
           img="/pngegg.png"
           passThru={CycleContent}
         />
 
         <DisplayContent
             title="Brake & Suspension"
-            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            content={<><p>Brake Part Replacement & Repair</p><p>Fluid Flush & Brake line Bleeding</p></>}
             img="/pngegg.png"
             passThru={BrakeSusContent}
         />
 
         <DisplayContent
           title="Maintenance & Care"
-          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+          content={<><p>Oil Changes</p><p>Timing Maintenance</p><p>Ignition & Spark</p></>}
           img="/pngegg.png"
           passThru={VehMaintContent}
         />
 
         <DisplayContent
           title="Our Diagnostic Procedure"
-          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+          content={<><p>Code Readings</p><p>Smoke Testing</p><p>Leak Testing</p><p>Voltage Reading</p><p>Battery Testing</p></>}
           img="/pngegg.png"
           passThru={VehDiagContent}
         />
 
         <DisplayContent
           title="Tire Care & Maintenance"
-          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+          content={<><p>Tire Rotations</p><p>Tire Patches</p><p>Tire Replacement</p></>}
           img="/pngegg.png"
           passThru={TirMaintContent}
         />
         
         <DisplayContent
           title="Body & Paint"
-          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+          content={<><p>Scratch fixes & Corrections</p><p>Painted Components</p></>}
           img="/pngegg.png"
           passThru={BdyPntContent}
         />
 
         <DisplayContent
           title="A/C & Heating"
-          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+          content={<><p>Freon Charging</p><p>Component Replacement</p><p>Leak Testing</p></>}
           img="/pngegg.png"
           passThru={ACHeatContent}
         /> 
 
         <DisplayContent
           title="Welding & Other Services"
-          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+          content={<><p>Welding Exhaust</p><p>Resurfacing</p><p>Frame Replacement</p></>}
           img="/pngegg.png"
           passThru={WldOthr}
         />

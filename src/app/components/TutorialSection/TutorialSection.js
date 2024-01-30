@@ -39,37 +39,37 @@ export default function TutorialSection() {
               <SwiperSlide className={styles.VidCard}>
                 <div className={styles.ThumbNail}></div>
                 <h4>Slide One</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p> 
+                {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>  */}
               </SwiperSlide>
 
               <SwiperSlide className={styles.VidCard}>
                 <div className={styles.ThumbNail}></div>
                 <h4>Slide Two</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p> 
+                {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>  */}
               </SwiperSlide>
 
               <SwiperSlide className={styles.VidCard}>
                 <div className={styles.ThumbNail}></div>
                 <h4>Slide Three</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p> 
+                {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>  */}
               </SwiperSlide>
 
               <SwiperSlide className={styles.VidCard}>
                 <div className={styles.ThumbNail}></div>
                 <h4>Slide One</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p> 
+                {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>  */}
               </SwiperSlide>
 
               <SwiperSlide className={styles.VidCard}>
                 <div className={styles.ThumbNail}></div>
                 <h4>Slide Two</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p> 
+                {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>  */}
               </SwiperSlide>
 
               <SwiperSlide className={styles.VidCard}>
                 <div className={styles.ThumbNail}></div>
                 <h4>Slide Three</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p> 
+                {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>  */}
               </SwiperSlide>
 
           <FaChevronRight className={styles.NextArrow} onClick={() => swiperRef.current?.slideNext()}/>
