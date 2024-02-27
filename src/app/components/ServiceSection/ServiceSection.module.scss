@@ -7,17 +7,21 @@
         justify-content: center;
         align-items: center;
         transition: all 0.2s ease;
+        padding-top: 5rem;
         h2 {
             font-family: 'Montserrat';
             font-weight: 600;
             font-size: 1.75rem;
+            margin: 1rem 0;
         }
     
         p {
             font-family: 'Montserrat';
             width: 90%;
+            max-width: 1000px;
             text-align: center;
             margin-top: 1.5rem;
+            margin-bottom: 2rem;
             font-size: 1rem;
         }
     
@@ -46,13 +50,14 @@
         justify-content: center;
         align-items: center;
         height: 15vh;
-    
+
         .ServiceCTA {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin: 0 auto;
             width: 80%;
+            max-width: 600px;
             p {
                 width: 80%;
 
@@ -67,7 +72,7 @@
                 align-items: center;
                 height: 35px;
                 background-color: #C6409E;
-                width: 125px;
+                width: 100px;
                 border-radius: 0;
                 color: #1e1e1e;
                 letter-spacing: 0px;
@@ -79,11 +84,99 @@
 
 @media screen and (min-width: 500px) {
 
-    .ServiceGallery {
-        padding: 2rem 0;
+
+    .ServiceWrapper {
+        .ServiceSectionContainer {
+
+
+            h2 {
+
+            }
+
+            p {
+
+            }
+
+            button {
+                padding: .85rem;
+            }
+
+
+            .ServiceGallery {
+                padding: 2rem 0;
+            }
+    
+
+
+        }
+
+        .ServiceCTAContainer {
+            
+            .ServiceCTA {
+
+                p {
+                    font-size: 1rem;
+                    width: 70%;
+                }
+
+                .ctaBtn {
+
+                }
+            }
+        }
+    
     }
 
-    .GalleryRowOne, .GalleryRowTwo {
-        display: flex;
+
+
+
+}
+
+@media screen and (min-width: 650px) {
+    .ServiceWrapper {
+        .ServiceSectionContainer {
+            h2 {
+                font-size: 2.5rem;
+            }
+
+            p { 
+                font-size: 1.35rem;
+            }
+
+            .ServiceGallery {
+            }
+        }
+
+        .ServiceCTAContainer {
+            .ServiceCTA {
+                p {
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .ServiceWrapper {
+        .ServiceSectionContainer {
+            h2 {
+                
+            }
+
+            .ServiceGallery {
+                .GalleryRowOne, .GalleryRowTwo {
+                    display: flex;
+                }
+            }
+        }
+
+        .ServiceCTAContainer {
+            .ServiceCTA {
+                p {
+
+                }
+            }
+        }
     }
 }

@@ -26,7 +26,8 @@
             width: 90%;
             margin-top: 1rem;
             font-weight: 400;
-            font-family: 'montserrat'
+            font-family: 'montserrat';
+            max-width:  1000px;
         }
 
         .aboutBtn {
@@ -38,6 +39,17 @@
             border-radius: 2px;
             height: 35px;
             width: 175px;
+        }
+    }
+}
+
+@media screen and (min-width: 800px) {
+    
+    .aboutContainer {
+        .aboutContent {
+            p {
+                font-size: 1.25rem;
+            }
         }
     }
 }

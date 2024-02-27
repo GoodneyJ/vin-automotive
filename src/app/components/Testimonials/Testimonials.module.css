@@ -1,4 +1,5 @@
 .TestimonialsContainer {
+  font-family: "Montserrat";
   background-color: #251220;
   text-align: center;
   padding: 3rem;
@@ -6,4 +7,15 @@
 }
 .TestimonialsContainer h3, .TestimonialsContainer p {
   margin: 1rem;
+}
+
+@media screen and (min-width: 500px) {
+  .TestimonialsContainer h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .TestimonialsContainer p {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
 }/*# sourceMappingURL=Testimonials.module.css.map */

@@ -55,7 +55,7 @@ export default function Navbar() {
         </nav>
 
         <div className={styles.sidemenu} ref={sidebarRef}>
-            <Link href="#HERO"onClick={handleClick}>Home</Link>
+            <Link href="/"onClick={handleClick}>Home</Link>
             <Link href="#" onClick={handleClick}>About</Link>
             <Link href="/services" onClick={handleClick}>Services</Link>
             <Link href="/tutorials" onClick={handleClick}>Content</Link>

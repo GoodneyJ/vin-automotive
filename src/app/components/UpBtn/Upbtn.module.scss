@@ -20,3 +20,12 @@
         cursor: pointer;
     }
 }
+
+
+@media screen and (min-width: 800px) {
+    .UpBtnContainer {
+        height: 55px;
+        width: 55px;
+        font-size: 2rem;
+    }
+}

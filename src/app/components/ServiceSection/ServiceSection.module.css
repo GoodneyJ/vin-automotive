@@ -6,17 +6,21 @@
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease;
+  padding-top: 5rem;
 }
 .ServiceWrapper .ServiceSectionContainer h2 {
   font-family: "Montserrat";
   font-weight: 600;
   font-size: 1.75rem;
+  margin: 1rem 0;
 }
 .ServiceWrapper .ServiceSectionContainer p {
   font-family: "Montserrat";
   width: 90%;
+  max-width: 1000px;
   text-align: center;
   margin-top: 1.5rem;
+  margin-bottom: 2rem;
   font-size: 1rem;
 }
 .ServiceWrapper .ServiceSectionContainer button {
@@ -46,6 +50,7 @@
   align-items: center;
   margin: 0 auto;
   width: 80%;
+  max-width: 600px;
 }
 .ServiceWrapper .ServiceCTAContainer .ServiceCTA p {
   width: 80%;
@@ -59,17 +64,34 @@
   align-items: center;
   height: 35px;
   background-color: #C6409E;
-  width: 125px;
+  width: 100px;
   border-radius: 0;
   color: #1e1e1e;
   letter-spacing: 0px;
 }
 
 @media screen and (min-width: 500px) {
-  .ServiceGallery {
+  .ServiceWrapper .ServiceSectionContainer button {
+    padding: 0.85rem;
+  }
+  .ServiceWrapper .ServiceSectionContainer .ServiceGallery {
     padding: 2rem 0;
   }
-  .GalleryRowOne, .GalleryRowTwo {
+  .ServiceWrapper .ServiceCTAContainer .ServiceCTA p {
+    font-size: 1rem;
+    width: 70%;
+  }
+}
+@media screen and (min-width: 650px) {
+  .ServiceWrapper .ServiceSectionContainer h2 {
+    font-size: 2.5rem;
+  }
+  .ServiceWrapper .ServiceSectionContainer p {
+    font-size: 1.35rem;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .ServiceWrapper .ServiceSectionContainer .ServiceGallery .GalleryRowOne, .ServiceWrapper .ServiceSectionContainer .ServiceGallery .GalleryRowTwo {
     display: flex;
   }
 }/*# sourceMappingURL=ServiceSection.module.css.map */

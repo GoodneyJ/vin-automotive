@@ -6,18 +6,25 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
-.heroContainer .pinkText, .heroContainer h1, .heroContainer .subtext, .heroContainer .heroBtn {
+.heroContainer .HeroContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+}
+.heroContainer .HeroContent .pinkText, .heroContainer .HeroContent h1, .heroContainer .HeroContent .subtext, .heroContainer .HeroContent .heroBtn {
   margin-left: 2rem;
 }
-.heroContainer .pinkText {
+.heroContainer .HeroContent .pinkText {
   color: #FF52CB;
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.55px;
 }
-.heroContainer h1 {
+.heroContainer .HeroContent h1 {
   font-family: "Montserrat";
   font-size: 1.6rem;
   font-weight: 600;
@@ -25,7 +32,7 @@
   width: 90%;
   text-shadow: 1px 1px 3px rgb(0, 0, 0);
 }
-.heroContainer .subtext {
+.heroContainer .HeroContent .subtext {
   color: #D0D0D0;
   font-family: "Inter";
   font-size: 0.65rem;
@@ -34,7 +41,7 @@
   letter-spacing: 0.5px;
   margin-bottom: 0.65rem;
 }
-.heroContainer .heroBtn {
+.heroContainer .HeroContent .heroBtn {
   text-align: center;
   background-color: #B74597;
   width: 175px;
@@ -45,4 +52,48 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.2s;
+}
+.heroContainer .HeroContent .heroBtn:hover {
+  background-color: #B74597;
+  color: #fff;
+}
+
+@media screen and (min-width: 800px) {
+  .heroContainer .HeroContent {
+    width: 80%;
+  }
+  .heroContainer .HeroContent .pinkText {
+    font-size: 1rem;
+  }
+  .heroContainer .HeroContent h1 {
+    font-size: 2rem;
+  }
+  .heroContainer .HeroContent .subtext {
+    font-size: 1rem;
+  }
+  .heroContainer .HeroContent .heroBtn {
+    height: 45px;
+    width: 200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .heroContainer .HeroContent {
+    width: 80%;
+  }
+  .heroContainer .HeroContent .pinkText {
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+  }
+  .heroContainer .HeroContent h1 {
+    font-size: 3.5rem;
+  }
+  .heroContainer .HeroContent .subtext {
+    font-size: 1.25rem;
+  }
+  .heroContainer .HeroContent .heroBtn {
+    height: 45px;
+    width: 200px;
+    font-size: 1.25rem;
+  }
 }/*# sourceMappingURL=hero.module.css.map */

@@ -1,1 +1,1 @@
-{"version":3,"sources":["Testimonials.module.scss","Testimonials.module.css"],"names":[],"mappings":"AAAA;EAEI,yBAAA;EACA,kBAAA;EACA,aAAA;EACA,mBAAA;ACAJ;ADGI;EACI,YAAA;ACDR","file":"Testimonials.module.css"}
+{"version":3,"sources":["Testimonials.module.scss","Testimonials.module.css"],"names":[],"mappings":"AAAA;EACI,yBAAA;EACA,yBAAA;EACA,kBAAA;EACA,aAAA;EACA,mBAAA;ACCJ;ADEI;EACI,YAAA;ACAR;;ADKA;EAGQ;IACI,iBAAA;IACA,gBAAA;ECJV;EDOM;IACI,eAAA;IACA,mBAAA;ECLV;AACF","file":"Testimonials.module.css"}

@@ -7,49 +7,117 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    .pinkText, h1, .subtext, .heroBtn {
-        margin-left: 2rem;
-    }
-
-    .pinkText {
-        color: #FF52CB;
-        font-size: .75rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: .55px;
-    }
-
-    h1 {
-        font-family: 'Montserrat';
-        font-size: 1.6rem;
-        font-weight: 600;
-        margin-bottom: 0;
-        width: 90%;
-        text-shadow: 1px 1px 3px rgb(0, 0, 0);
-    }
-
-    .subtext {
-        color: #D0D0D0;
-        font-family: 'Inter';
-        font-size: .65rem;
-        width: 85%;
-        font-weight: 300;
-        letter-spacing: .5px;
-        margin-bottom: .65rem;
-
-    }
-
-    .heroBtn {
-        text-align: center;
-        background-color: #B74597;
-        width: 175px;
-        height: 35px;
-        color: #1a1919;
-        font-weight: 600;
-        box-shadow: 1px 1px 3px #000;
-        display:flex;
+    align-items: center;
+    .HeroContent {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-items: center;
+        width: 90%;
+        .pinkText, h1, .subtext, .heroBtn {
+            margin-left: 2rem;
+        }
+    
+        .pinkText {
+            color: #FF52CB;
+            font-size: .75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: .55px;
+        }
+    
+        h1 {
+            font-family: 'Montserrat';
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 0;
+            width: 90%;
+            text-shadow: 1px 1px 3px rgb(0, 0, 0);
+        }
+    
+        .subtext {
+            color: #D0D0D0;
+            font-family: 'Inter';
+            font-size: .65rem;
+            width: 85%;
+            font-weight: 300;
+            letter-spacing: .5px;
+            margin-bottom: .65rem;
+    
+        }
+    
+        .heroBtn {
+            text-align: center;
+            background-color: #B74597;
+            width: 175px;
+            height: 35px;
+            color: #1a1919;
+            font-weight: 600;
+            box-shadow: 1px 1px 3px #000;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.2s;
+
+            &:hover {
+                background-color: #B74597;
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .heroContainer {
+
+        .HeroContent {
+            width: 80%;
+
+            .pinkText {
+                font-size: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+
+            .subtext {
+                font-size: 1rem;
+            }
+
+            .heroBtn {
+                height: 45px;
+                width: 200px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .heroContainer {
+
+        .HeroContent {
+            width: 80%;
+
+            .pinkText {
+                font-size: 1.25rem;
+                letter-spacing: 1px;
+            }
+            
+            h1 {
+                font-size: 3.5rem;
+            }
+
+            .subtext {
+                font-size: 1.25rem;
+            }
+
+            .heroBtn {
+                height: 45px;
+                width: 200px;
+                font-size: 1.25rem;
+                
+
+            }
+        }
     }
 }

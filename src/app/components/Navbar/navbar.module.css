@@ -143,12 +143,32 @@
   transform: translateX(0px);
 }
 
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 800px) {
   .burgerContainer {
     display: none;
   }
+  .navigationComponent .navContainer {
+    height: 65px;
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+  .navigationComponent .navContainer .logo {
+    font-size: 2rem;
+  }
+  .navigationComponent .navContainer .fullMenu {
+    font-size: 1.25rem;
+  }
 }
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 600px) {
+  .burgerContainer {
+    display: none;
+  }
+  .navigationComponent .navContainer {
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 550px) {
   .fullMenu {
     display: none;
   }

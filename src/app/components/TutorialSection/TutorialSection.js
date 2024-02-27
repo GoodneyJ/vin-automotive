@@ -37,45 +37,13 @@ export default function TutorialSection() {
               className={styles.RecentVideosContainer}
             >
               <SwiperSlide className={styles.VidCard}>
-                <div className={styles.ThumbNail}></div>
-                <h4>Slide One</h4>
+                
+                <h4>Videos Coming Soon!</h4>
                 {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>  */}
               </SwiperSlide>
 
-              <SwiperSlide className={styles.VidCard}>
-                <div className={styles.ThumbNail}></div>
-                <h4>Slide Two</h4>
-                {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>  */}
-              </SwiperSlide>
-
-              <SwiperSlide className={styles.VidCard}>
-                <div className={styles.ThumbNail}></div>
-                <h4>Slide Three</h4>
-                {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>  */}
-              </SwiperSlide>
-
-              <SwiperSlide className={styles.VidCard}>
-                <div className={styles.ThumbNail}></div>
-                <h4>Slide One</h4>
-                {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>  */}
-              </SwiperSlide>
-
-              <SwiperSlide className={styles.VidCard}>
-                <div className={styles.ThumbNail}></div>
-                <h4>Slide Two</h4>
-                {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>  */}
-              </SwiperSlide>
-
-              <SwiperSlide className={styles.VidCard}>
-                <div className={styles.ThumbNail}></div>
-                <h4>Slide Three</h4>
-                {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>  */}
-              </SwiperSlide>
-
-          <FaChevronRight className={styles.NextArrow} onClick={() => swiperRef.current?.slideNext()}/>
-          <FaChevronLeft className={styles.PrevArrow} onClick={() => swiperRef.current?.slidePrev()}/>
         </Swiper>
-        <Link href="/tutorials" className={styles.TutorialCTA}>Learn more</Link>
+        {/* <Link href="/tutorials" className={styles.TutorialCTA}>Learn more</Link> */}
 
       </div>
 
@@ -97,3 +65,42 @@ export default function TutorialSection() {
     </div>
   )
 }
+
+// <SwiperSlide className={styles.VidCard}>
+// <div className={styles.ThumbNail}></div>
+// <h4>Slide One</h4>
+// {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>  */}
+// </SwiperSlide>
+
+// <SwiperSlide className={styles.VidCard}>
+// <div className={styles.ThumbNail}></div>
+// <h4>Slide Two</h4>
+// {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>  */}
+// </SwiperSlide>
+
+// <SwiperSlide className={styles.VidCard}>
+// <div className={styles.ThumbNail}></div>
+// <h4>Slide Three</h4>
+// {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>  */}
+// </SwiperSlide>
+
+// <SwiperSlide className={styles.VidCard}>
+// <div className={styles.ThumbNail}></div>
+// <h4>Slide One</h4>
+// {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>  */}
+// </SwiperSlide>
+
+// <SwiperSlide className={styles.VidCard}>
+// <div className={styles.ThumbNail}></div>
+// <h4>Slide Two</h4>
+// {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>  */}
+// </SwiperSlide>
+
+// <SwiperSlide className={styles.VidCard}>
+// <div className={styles.ThumbNail}></div>
+// <h4>Slide Three</h4>
+// {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>  */}
+
+{/* <FaChevronRight className={styles.NextArrow} onClick={() => swiperRef.current?.slideNext()}/>
+<FaChevronLeft className={styles.PrevArrow} onClick={() => swiperRef.current?.slidePrev()}/> */}
+// </SwiperSlide>

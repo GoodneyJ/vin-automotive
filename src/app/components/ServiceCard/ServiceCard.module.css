@@ -1,4 +1,5 @@
 .ServiceCardContainer {
+  font-family: "montserrat";
   border: 0.5px solid #FF52CB;
   height: 450px;
   width: 250px;
@@ -32,5 +33,19 @@
 @media screen and (min-width: 500px) {
   .ServiceCardContainer {
     margin: 2rem 1rem;
+    width: 500px;
+  }
+  .ServiceCardContainer h4 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .ServiceCardContainer p {
+    font-size: 1.25rem !important;
+    letter-spacing: 0px;
+  }
+}
+@media screen and (min-width: 660px) {
+  .ServiceCardContainer {
+    width: 650px;
   }
 }/*# sourceMappingURL=ServiceCard.module.css.map */
