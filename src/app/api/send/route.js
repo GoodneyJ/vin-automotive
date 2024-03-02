@@ -11,12 +11,12 @@ export async function POST(req, res) {
     const formData = reqData.formData;
     console.log(reqData)
 
-    // const data = await resend.emails.send({
-    //     from: 'Acme <onboarding@resend.dev>',
-    //     to: ['vin.mechanicalworkshop@gmail.com'],
-    //     subject: 'Lead from thevinshop.com!',
-    //     react: EmailTemplate({ name: formData.contactName, email: formData.email, jobType: formData.jobType, jobDescription: formData.jobDescription }),
-    // });
+    const data = await resend.emails.send({
+        from: 'Acme <onboarding@resend.dev>',
+        to: ['vin.mechanicalworkshop@gmail.com'],
+        subject: 'Lead from thevinshop.com!',
+        react: EmailTemplate({ name: formData.contactName, email: formData.email, jobType: formData.jobType, jobDescription: formData.jobDescription }),
+    });
 
     return Response.json(formData);
   } catch (error) {
