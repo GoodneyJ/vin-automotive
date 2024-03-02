@@ -50,14 +50,17 @@
 .contactContainer form .interfaceSpacer .recaptcha {
   transform: scale(0.75);
 }
-.contactContainer form .interfaceSpacer .submitBtn {
+.contactContainer form .interfaceSpacer button {
   margin-top: 2rem;
   margin-bottom: 1rem;
   padding: 0.5rem 2rem;
   border-radius: 2px;
   background-color: #460679;
-  transition: all 0.5 ease !important;
+  transition: all 0.5 ease;
 }
-.contactContainer form .interfaceSpacer .submitBtn:hover {
+.contactContainer form .interfaceSpacer button:hover {
   background-color: #9715ff;
+}
+.contactContainer form .interfaceSpacer button:disabled {
+  background-color: #1e1e1e !important;
 }/*# sourceMappingURL=contact.module.css.map */

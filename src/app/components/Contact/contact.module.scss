@@ -54,21 +54,31 @@
             align-items: center;
             transition: .5s;
             .recaptcha {
+                
                 transform:scale(0.75);
+
             }
 
-            .submitBtn {
+            button {
                 margin-top: 2rem;
                 margin-bottom: 1rem;
                 padding: .5rem 2rem;
                 border-radius: 2px;
                 background-color: #460679;
-                transition: all .5 ease !important;
+                transition: all .5 ease;
                 &:hover {
                     background-color: #9715ff;
                 }
 
+                &:disabled {
+                    background-color: #1e1e1e !important;
+                    
+                }
+
+
             }
+
+
         }
     }
 }
