@@ -26,7 +26,7 @@ export default function Contact() {
    const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const token = await executeRecaptcha("form_submit");
+
 
     const response = await fetch('../../api/send', {
       method: "POST",
