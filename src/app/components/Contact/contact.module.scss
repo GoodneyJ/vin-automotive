@@ -46,5 +46,30 @@
         select {
 
         }
+
+        .interfaceSpacer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: .5s;
+            .recaptcha {
+                transform:scale(0.75);
+            }
+
+            .submitBtn {
+                margin-top: 2rem;
+                margin-bottom: 1rem;
+                padding: .5rem 2rem;
+                border-radius: 2px;
+                background-color: #460679;
+                transition: all .5 ease !important;
+                &:hover {
+                    background-color: #9715ff;
+                }
+
+            }
+        }
     }
 }
+

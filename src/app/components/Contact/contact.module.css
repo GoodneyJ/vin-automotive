@@ -39,4 +39,25 @@
   background-color: #6A08B9;
   border: 2px solid #9715ff;
   box-shadow: 0px 0px 14px #9715ff;
+}
+.contactContainer form .interfaceSpacer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.contactContainer form .interfaceSpacer .recaptcha {
+  transform: scale(0.75);
+}
+.contactContainer form .interfaceSpacer .submitBtn {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 2rem;
+  border-radius: 2px;
+  background-color: #460679;
+  transition: all 0.5 ease !important;
+}
+.contactContainer form .interfaceSpacer .submitBtn:hover {
+  background-color: #9715ff;
 }/*# sourceMappingURL=contact.module.css.map */

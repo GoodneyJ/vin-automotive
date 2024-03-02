@@ -1,42 +1,40 @@
 'use client'
-import {React, useState} from 'react'
-import { EmailTemplate } from '../EmailTemplate/EmailTemplate';
-import { Resend } from 'resend';
+import {React, useRef, useState} from 'react'
+import ReCAPTCHA from 'react-google-recaptcha'
+import { verifyCaptcha } from '../../../ServerActions';
+
 import styles from './contact.module.css'
 
 export default function Contact() {
 
-  const [contactName, setContactName] = useState("")
-  const [email, setEmail] = useState("")
-  const [jobType, setJobType] = useState("")
-  const [jobDescription, setJobDescription] = useState("")
+
   const [formData, setFormData] = useState({
     contactName: '',
     email: '',
     jobType: '',
     jobDescription: ''
   });
+  const recaptchaRef = useRef(null)
+  const [isVerified, setIsVerified] = useState(false);
+
+  async function handleCaptchaSubmission(token) {
+    await verifyCaptcha(token)
+    .then(() => setIsVerified(true))
+    .catch(() => setIsVerified(false))
+  }
 
    const handleSubmit = async (e) => {
     e.preventDefault();
 
-      const response = await fetch('../../api/send', {
-        method: "POST",
+    const token = await executeRecaptcha("form_submit");
 
-        body: JSON.stringify({formData})
-      });
+    const response = await fetch('../../api/send', {
+      method: "POST",
+      body: JSON.stringify({formData})
+    });
 
     const data = await response.json();
-    
   }
-
-  const handleInputChange = (e) => {
-
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
 
   return (
     <div id="CONTACT" className={styles.contactContainer}>
@@ -45,17 +43,28 @@ export default function Contact() {
         <p>Any questions or concerns?</p>
         <p>You can message us here as well or call us!</p>
         <form onSubmit={handleSubmit}>
-            <input type="text" placeholder="name" name={contactName}  onChange={(e) => formData.contactName = e.target.value}/>
-            <input type="text" placeholder="email" onChange={(e) => formData.email = e.target.value} />
-            <select id="cars" name="cars" placeholder="what kind of work do you need?"  onChange={(e) => formData.jobType = e.target.value}>
+            <input type="text" placeholder="name" name={formData.contactName}  onChange={(e) => formData.contactName = e.target.value}/>
+            <input type="text" placeholder="email" name={formData.email} onChange={(e) => formData.email = e.target.value} />
+            <select id="cars" name={formData.jobType} placeholder="what kind of work do you need?"  onChange={(e) => formData.jobType = e.target.value}>
                 <option value="Maintenance">Maintenance</option>
                 <option value="Diagnosis">Diagnosis</option>
                 <option value="Repair">Replace / Repair</option>
                 <option value="Paint & Body">Paint & Body</option>
             </select>
-            <textarea  onChange={(e) => formData.jobDescription = e.target.value}></textarea>
-            <button type="submit">Submit</button>
+            <textarea  name={formData.jobDescription} onChange={(e) => formData.jobDescription = e.target.value}></textarea>
+            <div className={styles.interfaceSpacer}>
+              <button className={styles.submitBtn} type="submit" disabled={!isVerified}>Submit</button>
+              <ReCAPTCHA 
+                sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+                ref={recaptchaRef}
+                onChange={handleCaptchaSubmission}
+                className={styles.recaptcha}
+                theme='dark'
+
+              />
+            </div>
         </form>
+
     </div>
   )
 }
