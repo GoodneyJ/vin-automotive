@@ -1,10 +1,14 @@
 .contactContainer {
+    border-top: 6px solid #c20a8b;
     font-family: 'montserrat';
     display: flex;
     flex-direction: column;
     text-align: center;
     padding: 3rem 0;
-    background: linear-gradient(0deg, rgb(56, 1, 101), rgb(37, 18, 32));
+    // background: linear-gradient(0deg, #380165, rgb(37, 18, 32));
+    background: url('/stacked-waves-haikei.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
     h2 {
         font-size: 2rem;
         font-weight: 600;
