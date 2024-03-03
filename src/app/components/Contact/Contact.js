@@ -159,7 +159,7 @@ export default function Contact() {
             </select>
             <textarea  name={formData.jobDescription} onChange={(e) => formData.jobDescription = e.target.value} ref={descRef}></textarea>
             <div className={styles.interfaceSpacer}>
-              <button className={styles.submitBtn} type="submit" /*disabled={!isVerified}*/>Submit</button>
+              <button className={styles.submitBtn} type="submit" disabled={!isVerified}>Submit</button>
               <ReCAPTCHA 
                 sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
                 ref={recaptchaRef}
