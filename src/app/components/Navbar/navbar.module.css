@@ -113,7 +113,7 @@
   transition: all 0.2s;
 }
 .navigationComponent .sidemenu a:hover {
-  color: #ff16f3;
+  color: #f5787c;
   cursor: pointer;
 }
 .navigationComponent .sidemenu button {
