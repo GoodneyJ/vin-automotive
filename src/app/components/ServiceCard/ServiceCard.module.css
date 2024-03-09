@@ -1,6 +1,6 @@
 .ServiceCardContainer {
   font-family: "montserrat";
-  border: 0.5px solid #FF52CB;
+  border: 0.5px solid #ED1A21;
   height: 450px;
   width: 250px;
   margin: 2rem 0;
@@ -22,8 +22,8 @@
 }
 .ServiceCardContainer:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));
-  box-shadow: 0px 0px 20px 3px #FF52CB;
-  border: 2px solid #faa5e0;
+  box-shadow: 0px 0px 20px 3px rgb(252, 30, 38);
+  border: 2px solid #ff0008;
 }
 .ServiceCardContainer:hover .CardContent {
   visibility: visible;

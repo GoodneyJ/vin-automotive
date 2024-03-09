@@ -1,9 +1,10 @@
 .TestimonialsContainer {
   font-family: "Montserrat";
-  background-color: #251220;
+  background-color: #2c0608;
   text-align: center;
   padding: 3rem;
   align-items: center;
+  height: 500px;
 }
 .TestimonialsContainer h3, .TestimonialsContainer p {
   margin: 1rem;

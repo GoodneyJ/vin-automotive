@@ -2,6 +2,7 @@
 import {React, useEffect, useState, useRef} from 'react'
 import Link from 'next/link'
 import styles from './navbar.module.css'
+import Image from 'next/image'
 
 export default function Navbar() {
 
@@ -37,7 +38,7 @@ export default function Navbar() {
       <div className={styles.navigationComponent}>
         <nav className={styles.navContainer}>
           <div className={styles.logo}>
-            <Link href="/" onClick={closeMenu}>VIN</Link>
+            <Link href="/" onClick={closeMenu}><Image src="/white-logo.png" width={100} height={75}/></Link>
           </div>
           
           <div className={styles.fullMenu}>

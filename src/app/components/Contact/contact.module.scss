@@ -1,14 +1,20 @@
 .contactContainer {
-    border-top: 6px solid #c20a8b;
+    border-top: 6px solid #ED1A21;
     font-family: 'montserrat';
     display: flex;
     flex-direction: column;
     text-align: center;
     padding: 3rem 0;
     // background: linear-gradient(0deg, #380165, rgb(37, 18, 32));
-    background: url('/stacked-waves-haikei.svg');
+    background: url('/layered-waves-haikei.svg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+
+    h2, p {
+        color: #0c0c0c;
+    }
+
     h2 {
         font-size: 2rem;
         font-weight: 600;
@@ -20,15 +26,15 @@
         display: flex;
         flex-direction: column;
         margin: 1rem 0;
-        transition: 0.5s;
+        transition: ease 0.5s all;
         input, select, textarea {
-            background-color: #460679;
+            background-color: #141414;
             width: 65%;
             margin: .25rem auto;
             transition: all .2s ease;
             border-radius: 2px;
             box-shadow: 0px 1px 5px #1e1e1e;
-            
+            padding: .5rem;
    
         }
 
@@ -47,9 +53,9 @@
         input, select, textarea {
             outline: none;
             &:focus {
-                background-color: #6A08B9;
-                border: 2px solid #9715ff;
-                box-shadow: 0px 0px 14px #9715ff;
+                background-color: #1f1f1f;
+                outline: 3px solid #fc0000;
+                box-shadow: 0px 0px 14px #000000;
             }
         }
 
@@ -74,16 +80,14 @@
                 margin-bottom: 1rem;
                 padding: .5rem 2rem;
                 border-radius: 2px;
-                background-color: #460679;
+                background-color: #202020;
                 transition: all .5 ease;
                 &:hover {
-                    background-color: #9715ff;
+                    background-color: #d9d9d9;
+                    color: #ED1A21;
                 }
 
-                &:disabled {
-                    background-color: #1e1e1e !important;
-                    
-                }
+
 
 
             }

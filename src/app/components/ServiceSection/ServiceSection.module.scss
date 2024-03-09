@@ -1,6 +1,14 @@
 .ServiceWrapper {
     .ServiceSectionContainer {
-        background: linear-gradient(180deg, rgba(12, 12, 12, 1), rgba(37, 18, 31, 1)), url('/vinyl-wrap-car.jpg');
+        background:
+            radial-gradient(black 15%, transparent 16%) 0 0,
+            radial-gradient(black 15%, transparent 16%) 8px 8px,
+            radial-gradient(rgba(29, 12, 12, 0.1) 15%, transparent 20%) 0 1px,
+            radial-gradient(rgba(24, 6, 6, 0.897) 15%, transparent 20%) 8px 9px;
+        background-color:#111010;
+        background-size:16px 16px;
+
+
         padding: 2rem 0;
         display: flex;
         flex-direction: column;
@@ -26,7 +34,7 @@
         }
     
         button {
-            background-color: #B88CDC;
+            background-color: #910c10;
             color: #dbdbdb;
             font-family: 'Montserrat';
             font-weight: 600;
@@ -36,7 +44,7 @@
             margin: 1rem;
             transition: all 0.2s ease;
             &:hover {
-                background-color: #7b5c94;
+                background-color: #ee1119;
             }
         }
     
@@ -71,12 +79,16 @@
                 justify-content: center;
                 align-items: center;
                 height: 35px;
-                background-color: #C6409E;
+                background-color: #d9d9d9;
                 width: 100px;
                 border-radius: 0;
                 color: #1e1e1e;
                 letter-spacing: 0px;
-
+                transition: all .2s ease;
+                &:hover {
+                    background-color: #ee1119;
+                    color: #d9d9d9;
+                }
             }
         }
     }

@@ -6,7 +6,7 @@
     right: 20px;
     bottom: 15px;
     border-radius: 2px;
-    background-color: #FF52CB;
+    background-color: #bb161e;
     z-index: 200000;
     display: flex;
     justify-content: center;
@@ -15,7 +15,7 @@
     will-change: background-color, color;
     box-shadow: 0 0 4px 4px #0c0c0c6e;
     &:hover {
-        background-color: #b83992;
+        background-color: #ED1A21;
         color:#d6d6d6;
         cursor: pointer;
     }

@@ -31,15 +31,15 @@
   margin-right: 2rem;
 }
 .navigationComponent .navContainer .fullMenu {
-  color: #FF52CB;
+  color: #ED1A21;
 }
 .navigationComponent .navContainer .fullMenu a {
   margin: 1rem;
   transition: all 0.2s ease;
 }
 .navigationComponent .navContainer .fullMenu a:hover {
-  color: #fd9de1;
-  filter: drop-shadow(0px 0px 15px #ff06b4);
+  color: #ED1B24;
+  filter: drop-shadow(0px 0px 15px #ED1B24);
   cursor: pointer;
 }
 .navigationComponent .navContainer .burgerContainer {
@@ -84,11 +84,11 @@
 }
 .navigationComponent .navContainer .burgerContainer.open .burger::before {
   transform: rotate(45deg) translate(35px, -35px);
-  background-color: #FF52CB;
+  background-color: #ED1A21;
 }
 .navigationComponent .navContainer .burgerContainer.open .burger::after {
   transform: rotate(-45deg) translate(35px, 35px);
-  background-color: #FF52CB;
+  background-color: #ED1A21;
 }
 .navigationComponent .sidemenu {
   z-index: 100000;
@@ -103,7 +103,7 @@
   justify-content: center;
   align-items: center;
   will-change: transform, display;
-  color: #ff53cb;
+  color: #ED1A21;
   transition: all 0.2s ease;
   transform: translateX(100%);
 }

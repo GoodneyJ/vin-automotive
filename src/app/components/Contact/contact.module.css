@@ -1,13 +1,17 @@
 .contactContainer {
-  border-top: 6px solid #c20a8b;
+  border-top: 6px solid #ED1A21;
   font-family: "montserrat";
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 3rem 0;
-  background: url("/stacked-waves-haikei.svg");
+  background: url("/layered-waves-haikei.svg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+}
+.contactContainer h2, .contactContainer p {
+  color: #0c0c0c;
 }
 .contactContainer h2 {
   font-size: 2rem;
@@ -20,15 +24,16 @@
   display: flex;
   flex-direction: column;
   margin: 1rem 0;
-  transition: 0.5s;
+  transition: ease 0.5s all;
 }
 .contactContainer form input, .contactContainer form select, .contactContainer form textarea {
-  background-color: #460679;
+  background-color: #141414;
   width: 65%;
   margin: 0.25rem auto;
   transition: all 0.2s ease;
   border-radius: 2px;
   box-shadow: 0px 1px 5px #1e1e1e;
+  padding: 0.5rem;
 }
 .contactContainer form input, .contactContainer form select {
   height: 35px;
@@ -40,9 +45,9 @@
   outline: none;
 }
 .contactContainer form input:focus, .contactContainer form select:focus, .contactContainer form textarea:focus {
-  background-color: #6A08B9;
-  border: 2px solid #9715ff;
-  box-shadow: 0px 0px 14px #9715ff;
+  background-color: #1f1f1f;
+  outline: 3px solid #fc0000;
+  box-shadow: 0px 0px 14px #000000;
 }
 .contactContainer form .interfaceSpacer {
   display: flex;
@@ -59,12 +64,10 @@
   margin-bottom: 1rem;
   padding: 0.5rem 2rem;
   border-radius: 2px;
-  background-color: #460679;
+  background-color: #202020;
   transition: all 0.5 ease;
 }
 .contactContainer form .interfaceSpacer button:hover {
-  background-color: #9715ff;
-}
-.contactContainer form .interfaceSpacer button:disabled {
-  background-color: #1e1e1e !important;
+  background-color: #d9d9d9;
+  color: #ED1A21;
 }/*# sourceMappingURL=contact.module.css.map */

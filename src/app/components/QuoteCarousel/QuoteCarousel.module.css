@@ -1,6 +1,7 @@
 .SwiperContainer {
   transition: all 0.2s ease;
   max-width: 800px;
+  height: 100%;
 }
 .SwiperContainer .SwiperSlide {
   display: flex;
@@ -20,18 +21,20 @@
 .SwiperContainer .SwiperSlide .SlideContent {
   height: 250px;
   width: 350px;
-  background-color: #9715FF;
+  background-color: #1d1d1d;
+  border-radius: 2px;
+  box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .SwiperContainer .NextArrow, .SwiperContainer .PrevArrow {
-  color: #9715FF;
+  color: #ED1B24;
   transition: all 0.2s ease;
   font-size: 2.5rem;
 }
 .SwiperContainer .NextArrow:hover, .SwiperContainer .PrevArrow:hover {
-  color: #FF52CB;
+  color: #ffecec;
   filter: drop-shadow(0px 0px 7px #c77bb0);
 }
 .SwiperContainer .NextArrow {
