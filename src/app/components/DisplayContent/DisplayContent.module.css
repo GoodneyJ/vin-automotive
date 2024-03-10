@@ -35,12 +35,12 @@
   display: -webkit-box;
 }
 .DisplayContainer .DisplayColumn button {
-  background-color: #FF52CB;
+  background-color: #ED1A21;
   margin: 0 1rem;
   font-size: 0.85rem;
   padding: 0.25rem;
   border-radius: 2px;
-  color: #1E1E1E;
+  color: #fff;
 }
 .DisplayContainer .DisplayColumn .img {
   margin: 1.5rem 0;

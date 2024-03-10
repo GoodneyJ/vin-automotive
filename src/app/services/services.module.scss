@@ -2,7 +2,7 @@
 .ServicesPageContainer {
     font-family: 'Montserrat';
     height: 100vh;
-    background: linear-gradient(-180deg, rgb(12, 12, 12), rgb(37, 18, 31));;
+    background: linear-gradient(-180deg, rgb(12, 12, 12), rgb(37, 18, 18));;
     display: flex;
     padding: 5rem 0;
     align-items: center;
@@ -30,13 +30,13 @@
                 margin: .5rem .65rem;
                 letter-spacing: .1px;
                 text-transform: uppercase;
-                border: 1px solid #9B347C;
+                border: 1px solid #a50f14;
                 padding: .25rem;
                 font-size: .65rem;
                 white-space: nowrap;
                 transition: 0.2s all ease;
                 &:hover {
-                    background-color: #9B347C;
+                    background-color: #a50f14;
                     border: 1.5px solid #d9d9d9;
                     cursor: pointer;
                 }

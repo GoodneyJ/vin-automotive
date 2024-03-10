@@ -14,7 +14,7 @@
     h3 {
         font-size: 1.25rem;
         font-weight: 600;
-        color: #FF52CB;
+        color: #a50f14;
     }
 
     p {
@@ -26,6 +26,13 @@
         overflow: hidden;
         text-overflow: ellipsis;
 
+    }
+
+    &:hover {
+        cursor: pointer;
+        h3 {
+            color: #ED1A21;
+        }
     }
 }
 

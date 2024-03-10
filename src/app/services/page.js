@@ -167,7 +167,7 @@ export default function Page() {
         <style jsx>
           {`
             .active {
-              background-color: #9B347C;
+              background-color: #a50f14;
               border: 1.5px solid #d9d9d9 !important;
             }
 

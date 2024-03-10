@@ -14,7 +14,7 @@
 .VidCardContainer h3 {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #FF52CB;
+  color: #a50f14;
 }
 .VidCardContainer p {
   width: 70%;
@@ -24,6 +24,12 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.VidCardContainer:hover {
+  cursor: pointer;
+}
+.VidCardContainer:hover h3 {
+  color: #ED1A21;
 }
 
 @media screen and (min-width: 500px) {
